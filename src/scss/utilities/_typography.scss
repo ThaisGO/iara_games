@@ -1,0 +1,51 @@
+// // ==========================================
+// // HEADLINES
+// // ==========================================
+
+// $headline-sizes: (
+//     h1: 64px,
+//     h2: 56px,
+//     h3: 48px,
+//     h4: 40px,
+//     h5: 32px,
+//     h6: 24px
+// );
+
+// @each $name, $size in $headline-sizes {
+//     .headlines-#{$name} {
+//         font-family: var(--font-heading);
+//         font-size: $size;
+//         font-weight: var(--font-weight-extrabold);
+//     }
+// }
+
+
+// // ==========================================
+// // BODY TEXT
+// // ==========================================
+
+// $body-sizes: (
+//     xl: var(--font-size-body-xl),
+//     lg: var(--font-size-body-lg),
+//     md: var(--font-size-body-md),
+//     sm: var(--font-size-body-sm),
+//     xs: var(--font-size-body-xs)
+// );
+
+// $body-weights: (
+//     regular: var(--font-weight-regular),
+//     semibold: var(--font-weight-semibold),
+//     extrabold: var(--font-weight-extrabold)
+// );
+
+// @each $weight-name, $weight-value in $body-weights {
+//     @each $size-name, $size-value in $body-sizes {
+
+//         .body-#{$weight-name}-#{$size-name} {
+//             font-family: var(--font-body);
+//             font-size: $size-value;
+//             font-weight: $weight-value;
+//         }
+
+//     }
+// }

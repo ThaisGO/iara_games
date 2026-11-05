@@ -1,0 +1,34 @@
+// ==========================================
+// FUNDO RADIAL — IARA GAMES
+// ==========================================
+
+.bg-radial-game {
+    background-color: #031408;
+
+    background-image:
+        radial-gradient(
+            circle at 75% 100%,
+            rgba(242, 192, 70, 0.4) 0%,
+            rgba(242, 192, 70, 0.1) 20%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 15% 25%,
+            #0f4d1e 0%,
+            #062b10 30%,
+            transparent 70%
+        );
+}
+
+
+// ==========================================
+// PADRÃO INDÍGENA
+// ==========================================
+
+.bg-pattern-indigena {
+    background-image: url("../../public/images/pattern-iara.webp");
+    background-repeat: repeat-x;
+    background-position: left center;
+    background-size: auto 100%;
+    min-height: 80px;
+}

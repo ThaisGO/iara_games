@@ -1,0 +1,193 @@
+
+// ==========================================
+// TOPBAR
+// ==========================================
+
+.topbar {
+    min-height: 72px;
+    width: 100%;
+    gap: 24px;
+    background-color: var(--surface-primary);
+}
+
+
+// ==========================================
+// ÁREA ESQUERDA
+// ==========================================
+
+.topbar-left {
+    min-width: 0;
+    gap: 12px;
+}
+
+.sidebar-toggle {
+    color: var(--text-title-neutral);
+    padding: 6px;
+
+    &:hover {
+        color: var(--action-secondary-default);
+    }
+}
+
+
+// ==========================================
+// BUSCA
+// ==========================================
+
+.topbar-search {
+    width: min(100%, 460px);
+    min-width: 0;
+
+    gap: 10px;
+    padding: 10px 16px;
+
+    color: var(--text-caption);
+
+    background-color: var(--surface-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 50px;
+
+    input {
+        width: 100%;
+        min-width: 0;
+
+        color: var(--text-title-neutral);
+        background: transparent;
+        border: 0;
+        outline: 0;
+
+        font-family: var(--font-body);
+        font-size: var(--font-size-body-xs);
+
+        &::placeholder {
+            color: var(--text-caption);
+        }
+    }
+}
+
+
+// ==========================================
+// AÇÕES
+// ==========================================
+
+.topbar-actions {
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.topbar-text-link {
+    color: var(--text-body);
+    text-decoration: none;
+
+    font-size: var(--font-size-body-sm);
+    font-weight: var(--font-weight-regular);
+    
+    &:hover {
+        color: var(--action-secondary-default);
+    }
+}
+
+.topbar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    color: var(--text-body);
+    text-decoration: none;
+
+    border: 1px solid var(--border-default);
+    border-radius: 50%;
+
+    &:hover {
+        color: var(--action-secondary-default);
+        border-color: var(--action-secondary-default);
+    }
+}
+
+
+// ==========================================
+// PERFIL
+// ==========================================
+
+.topbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--text-body);
+    text-decoration: none;
+
+    img {
+        width: 36px;
+        height: 36px;
+
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        color: var(--action-secondary-default);
+    }
+}
+
+
+// ==========================================
+// ÍCONES
+// ==========================================
+
+.topbar-search .ui-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.topbar-icon .ui-icon {
+    width: 17px;
+    height: 17px;
+}
+
+.topbar-profile .ui-icon {
+    width: 12px;
+    height: 12px;
+}
+
+
+// ==========================================
+// RESPONSIVIDADE
+// ==========================================
+
+@media (max-width: 767.98px) {
+
+    .topbar {
+        gap: 10px;
+        padding: 12px 14px;
+    }
+
+    .topbar-actions {
+        gap: 8px;
+    }
+
+    .topbar-text-link {
+        display: none;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .topbar {
+        padding-inline: 8px;
+    }
+
+    .topbar-actions {
+        gap: 5px;
+    }
+
+    .topbar-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+}

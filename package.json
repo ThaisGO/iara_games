@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "sass --load-path=node_modules --watch src/scss/main.scss:build/css/main.css",
+    "build": "sass --load-path=node_modules --style=compressed src/scss/main.scss:build/css/main.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.107.1"
+  }
+}

@@ -1,0 +1,29 @@
+.coming-soon-pattern {
+    min-height: 4rem;
+    border-color: var(--border-default) !important;
+}
+
+.coming-soon-pattern {
+    max-height: 80px;
+}
+
+.coming-soon-image {
+    width: auto;
+    max-height: 18rem;
+    object-fit: contain;
+}
+
+.coming-soon-label {
+    display: inline-flex;
+    align-items: center;
+    padding: .25rem .75rem;
+
+    background-color: var(--opacity-yellow-24);
+    border: 1px solid var(--border-dark);
+    border-radius: 50rem;
+}
+
+.coming-soon-description {
+    width: 100%;
+    max-width: 32rem;
+}

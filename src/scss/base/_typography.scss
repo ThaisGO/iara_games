@@ -1,0 +1,117 @@
+// ==========================================
+// HEADLINES
+// ==========================================
+
+@mixin headline($size) {
+    font-family: var(--font-heading);
+    font-size: $size;
+    font-weight: 800;
+}
+
+.headlines-h1 {
+    @include headline(64px);
+}
+
+.headlines-h2 {
+    @include headline(56px);
+}
+
+.headlines-h3 {
+    @include headline(48px);
+}
+
+.headlines-h4 {
+    @include headline(40px);
+}
+
+.headlines-h5 {
+    @include headline(32px);
+}
+
+.headlines-h6 {
+    @include headline(24px);
+}
+
+
+// ==========================================
+// BODY TEXT
+// ==========================================
+
+@mixin body-text($size, $weight: 400) {
+    font-family: var(--font-body);
+    font-size: $size;
+    font-weight: $weight;
+}
+
+// Regular
+.body-regular-xl {
+    @include body-text(20px, 400);
+}
+
+.body-regular-lg {
+    @include body-text(18px, 400);
+}
+
+.body-regular-md {
+    @include body-text(16px, 400);
+}
+
+.body-regular-sm {
+    @include body-text(14px, 400);
+}
+
+.body-regular-xs {
+    @include body-text(12px, 400);
+}
+
+// Semibold
+.body-semibold-xl {
+    @include body-text(20px, 600);
+}
+
+.body-semibold-lg {
+    @include body-text(18px, 600);
+}
+
+.body-semibold-md {
+    @include body-text(16px, 600);
+}
+
+.body-semibold-sm {
+    @include body-text(14px, 600);
+}
+
+.body-semibold-xs {
+    @include body-text(12px, 600);
+}
+
+// Extrabold
+.body-extrabold-xl {
+    @include body-text(20px, 800);
+}
+
+.body-extrabold-lg {
+    @include body-text(18px, 800);
+}
+
+.body-extrabold-md {
+    @include body-text(16px, 800);
+}
+
+.body-extrabold-sm {
+    @include body-text(14px, 800);
+}
+
+.body-extrabold-xs {
+    @include body-text(12px, 800);
+}
+
+// ==========================================
+// CORES SEMANTICAS - TEXTO
+// ==========================================
+.text-title-neutral{ color: var(--neutral-gray-50); }
+.text-title-primary{ color: var(--brand-green-500); }
+.text-title-secondary{ color: var(--brand-yellow-400); }
+.text-subtitle{ color: var(--opacity-light-gray-88); }
+.text-body{ color: var(--opacity-light-gray-72) !important; }
+.text-caption{ color: var(--opacity-light-gray-64); }

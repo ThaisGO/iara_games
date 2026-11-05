@@ -1,0 +1,113 @@
+// ==========================================
+// BASE DOS BOTÕES
+// ==========================================
+
+.btn {
+    --bs-btn-font-family: var(--font-body);
+    --bs-btn-font-size: var(--font-size-body-sm);
+    --bs-btn-font-weight: var(--font-weight-extrabold);
+    --bs-btn-line-height: 1.5;
+
+    --bs-btn-padding-y: 0.75rem;
+    --bs-btn-padding-x: 1.25rem;
+    --bs-btn-border-radius: 0.75rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+// ==========================================
+// BOTÃO PRIMÁRIO
+// ==========================================
+
+.btn-iara-primary {
+    --bs-btn-color: var(--neutral-gray-950);
+    --bs-btn-bg: var(--action-primary-default);
+    --bs-btn-border-color: var(--action-primary-default);
+
+    --bs-btn-hover-color: var(--neutral-gray-950);
+    --bs-btn-hover-bg: var(--action-primary-hover);
+    --bs-btn-hover-border-color: var(--action-primary-hover);
+
+    --bs-btn-active-color: var(--neutral-gray-950);
+    --bs-btn-active-bg: var(--action-primary-pressed);
+    --bs-btn-active-border-color: var(--action-primary-pressed);
+
+    --bs-btn-disabled-color: var(--neutral-gray-500);
+    --bs-btn-disabled-bg: var(--surface-disabled);
+    --bs-btn-disabled-border-color: var(--surface-disabled);
+}
+
+
+// ==========================================
+// BOTÃO SECUNDÁRIO
+// ==========================================
+
+.btn-iara-secondary {
+    --bs-btn-color: var(--neutral-gray-950);
+    --bs-btn-bg: var(--action-secondary-default);
+    --bs-btn-border-color: var(--action-secondary-default);
+
+    --bs-btn-hover-color: var(--neutral-gray-950);
+    --bs-btn-hover-bg: var(--action-secondary-hover);
+    --bs-btn-hover-border-color: var(--action-secondary-hover);
+
+    --bs-btn-active-color: var(--neutral-gray-950);
+    --bs-btn-active-bg: var(--action-secondary-pressed);
+    --bs-btn-active-border-color: var(--action-secondary-pressed);
+
+    --bs-btn-disabled-color: var(--neutral-gray-500);
+    --bs-btn-disabled-bg: var(--surface-disabled);
+    --bs-btn-disabled-border-color: var(--surface-disabled);
+
+    // Glow amarelo
+    --bs-btn-box-shadow: 0 0 12px rgba(240, 185, 51, 0.25);
+    --bs-btn-hover-box-shadow: 0 0 16px rgba(240, 185, 51, 0.4);
+}
+
+// ==========================================
+// BOTÃO OUTLINE PRIMÁRIO
+// ==========================================
+
+.btn-iara-outline-primary {
+    --bs-btn-color: var(--action-primary-default);
+    --bs-btn-bg: var(--opacity-green-16);
+    --bs-btn-border-color: var(--action-primary-default);
+
+    --bs-btn-hover-color: var(--neutral-gray-950);
+    --bs-btn-hover-bg: var(--action-primary-default);
+    --bs-btn-hover-border-color: var(--action-primary-default);
+
+    --bs-btn-active-color: var(--neutral-gray-950);
+    --bs-btn-active-bg: var(--action-primary-pressed);
+    --bs-btn-active-border-color: var(--action-primary-pressed);
+
+    --bs-btn-disabled-color: var(--neutral-gray-500);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--surface-disabled);
+}
+
+
+// ==========================================
+// BOTÃO OUTLINE SECUNDÁRIO
+// ==========================================
+
+.btn-iara-outline-secondary {
+    --bs-btn-color: var(--action-secondary-default);
+    --bs-btn-bg: var(--opacity-yellow-16);
+    --bs-btn-border-color: var(--action-secondary-default);
+
+    --bs-btn-hover-color: var(--neutral-gray-950);
+    --bs-btn-hover-bg: var(--action-secondary-default);
+    --bs-btn-hover-border-color: var(--action-secondary-default);
+
+    --bs-btn-active-color: var(--neutral-gray-950);
+    --bs-btn-active-bg: var(--action-secondary-pressed);
+    --bs-btn-active-border-color: var(--action-secondary-pressed);
+
+    --bs-btn-disabled-color: var(--neutral-gray-500);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--surface-disabled);
+}

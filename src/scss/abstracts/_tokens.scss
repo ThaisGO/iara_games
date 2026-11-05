@@ -1,0 +1,194 @@
+// ==========================================
+// CORES DA MARCA — VERDE
+// ==========================================
+
+$brand-green-50:  #F0FDF4;
+$brand-green-100: #DDFBE6;
+$brand-green-200: #BCF6CE;
+$brand-green-300: #88EDA9;
+$brand-green-400: #4DDB7C;
+$brand-green-500: #24B956;
+$brand-green-600: #24B956;
+$brand-green-700: #177E3A;
+$brand-green-800: #186332;
+$brand-green-900: #15522B;
+$brand-green-950: #062D15;
+
+
+// ==========================================
+// CORES DA MARCA — AMARELO
+// ==========================================
+
+$brand-yellow-50:  #FDF9E9;
+$brand-yellow-100: #FBF2C6;
+$brand-yellow-200: #F8E290;
+$brand-yellow-300: #F4CB50;
+$brand-yellow-400: #F0B933;
+$brand-yellow-500: #DF9B13;
+$brand-yellow-600: #C0760E;
+$brand-yellow-700: #99540F;
+$brand-yellow-800: #7F4314;
+$brand-yellow-900: #6C3817;
+$brand-yellow-950: #3F1C09;
+
+
+// ==========================================
+// TIPOGRAFIA
+// ==========================================
+
+$font-heading: "Big Shoulders", sans-serif;
+$font-body: "Raleway", sans-serif;
+
+
+// ==========================================
+// CORES NEUTRAS — CINZA
+// ==========================================
+
+$neutral-gray-50:  #F9FBFA;
+$neutral-gray-100: #F3F6F4;
+$neutral-gray-200: #E5EBE7;
+$neutral-gray-300: #D1DCD5;
+$neutral-gray-400: #99AFA0;
+$neutral-gray-500: #6A8272;
+$neutral-gray-600: #4A6553;
+$neutral-gray-700: #365340;
+$neutral-gray-800: #1E3927;
+$neutral-gray-900: #102819;
+$neutral-gray-950: #031209;
+
+
+// ==========================================
+// TOKENS CSS — DISPONÍVEIS NO HTML
+// ==========================================
+
+:root {
+    // Paleta verde
+    --brand-green-50: #{$brand-green-50};
+    --brand-green-100: #{$brand-green-100};
+    --brand-green-200: #{$brand-green-200};
+    --brand-green-300: #{$brand-green-300};
+    --brand-green-400: #{$brand-green-400};
+    --brand-green-500: #{$brand-green-500};
+    --brand-green-600: #{$brand-green-600};
+    --brand-green-700: #{$brand-green-700};
+    --brand-green-800: #{$brand-green-800};
+    --brand-green-900: #{$brand-green-900};
+    --brand-green-950: #{$brand-green-950};
+
+    // Paleta amarela
+    --brand-yellow-50: #{$brand-yellow-50};
+    --brand-yellow-100: #{$brand-yellow-100};
+    --brand-yellow-200: #{$brand-yellow-200};
+    --brand-yellow-300: #{$brand-yellow-300};
+    --brand-yellow-400: #{$brand-yellow-400};
+    --brand-yellow-500: #{$brand-yellow-500};
+    --brand-yellow-600: #{$brand-yellow-600};
+    --brand-yellow-700: #{$brand-yellow-700};
+    --brand-yellow-800: #{$brand-yellow-800};
+    --brand-yellow-900: #{$brand-yellow-900};
+    --brand-yellow-950: #{$brand-yellow-950};
+
+    // Paleta cinza
+    --neutral-gray-50: #{$neutral-gray-50};
+    --neutral-gray-100: #{$neutral-gray-100};
+    --neutral-gray-200: #{$neutral-gray-200};
+    --neutral-gray-300: #{$neutral-gray-300};
+    --neutral-gray-400: #{$neutral-gray-400};
+    --neutral-gray-500: #{$neutral-gray-500};
+    --neutral-gray-600: #{$neutral-gray-600};
+    --neutral-gray-700: #{$neutral-gray-700};
+    --neutral-gray-800: #{$neutral-gray-800};
+    --neutral-gray-900: #{$neutral-gray-900};
+    --neutral-gray-950: #{$neutral-gray-950};
+
+    // Transparências
+    --opacity-green-8: rgb(from var(--brand-green-500) r g b / 8%);
+    --opacity-green-16: rgb(from var(--brand-green-500) r g b / 16%);
+    --opacity-green-24: rgb(from var(--brand-green-500) r g b / 24%);
+    --opacity-green-32: rgb(from var(--brand-green-500) r g b / 32%);
+    --opacity-green-40: rgb(from var(--brand-green-500) r g b / 40%);
+    --opacity-green-48: rgb(from var(--brand-green-500) r g b / 48%);
+    --opacity-green-56: rgb(from var(--brand-green-500) r g b / 56%);
+    --opacity-green-64: rgb(from var(--brand-green-500) r g b / 64%);
+    --opacity-green-72: rgb(from var(--brand-green-400) r g b / 72%);
+    --opacity-green-80: rgb(from var(--brand-green-500) r g b / 80%);
+    --opacity-green-88: rgb(from var(--brand-green-500) r g b / 88%);
+
+    --opacity-yellow-8: rgb(from var(--brand-yellow-400) r g b / 8%);
+    --opacity-yellow-16: rgb(from var(--brand-yellow-400) r g b / 16%);
+    --opacity-yellow-24: rgb(from var(--brand-yellow-400) r g b / 24%);
+    --opacity-yellow-32: rgb(from var(--brand-yellow-400) r g b / 32%);
+    --opacity-yellow-40: rgb(from var(--brand-yellow-400) r g b / 40%);
+    --opacity-yellow-48: rgb(from var(--brand-yellow-400) r g b / 48%);
+    --opacity-yellow-56: rgb(from var(--brand-yellow-400) r g b / 56%);
+    --opacity-yellow-64: rgb(from var(--brand-yellow-400) r g b / 64%);
+    --opacity-yellow-72: rgb(from var(--brand-yellow-400) r g b / 72%);
+    --opacity-yellow-80: rgb(from var(--brand-yellow-400) r g b / 80%);
+    --opacity-yellow-88: rgb(from var(--brand-yellow-400) r g b / 88%);
+
+    --opacity-dark-gray-8: rgb(from var(--neutral-gray-950) r g b / 8%);
+    --opacity-dark-gray-16: rgb(from var(--neutral-gray-950) r g b / 16%);
+    --opacity-dark-gray-24: rgb(from var(--neutral-gray-950) r g b / 24%);
+    --opacity-dark-gray-32: rgb(from var(--neutral-gray-950) r g b / 32%);
+    --opacity-dark-gray-40: rgb(from var(--neutral-gray-950) r g b / 40%);
+    --opacity-dark-gray-48: rgb(from var(--neutral-gray-950) r g b / 48%);
+    --opacity-dark-gray-56: rgb(from var(--neutral-gray-950) r g b / 56%);
+    --opacity-dark-gray-64: rgb(from var(--neutral-gray-950) r g b / 64%);
+    --opacity-dark-gray-72: rgb(from var(--neutral-gray-950) r g b / 72%);
+    --opacity-dark-gray-80: rgb(from var(--neutral-gray-950) r g b / 80%);
+    --opacity-dark-gray-88: rgb(from var(--neutral-gray-950) r g b / 88%);
+
+    --opacity-light-gray-8: rgb(from var(--neutral-gray-50) r g b / 8%);
+    --opacity-light-gray-16: rgb(from var(--neutral-gray-50) r g b / 16%);
+    --opacity-light-gray-24: rgb(from var(--neutral-gray-50) r g b / 24%);
+    --opacity-light-gray-32: rgb(from var(--neutral-gray-50) r g b / 32%);
+    --opacity-light-gray-40: rgb(from var(--neutral-gray-50) r g b / 40%);
+    --opacity-light-gray-48: rgb(from var(--neutral-gray-50) r g b / 48%);
+    --opacity-light-gray-56: rgb(from var(--neutral-gray-50) r g b / 56%);
+    --opacity-light-gray-64: rgb(from var(--neutral-gray-50) r g b / 64%);
+    --opacity-light-gray-72: rgb(from var(--neutral-gray-50) r g b / 72%);
+    --opacity-light-gray-80: rgb(from var(--neutral-gray-50) r g b / 80%);
+    --opacity-light-gray-88: rgb(from var(--neutral-gray-50) r g b / 88%);
+
+    // Cores semânticas — texto
+    --text-title-neutral: var(--neutral-gray-50);
+    --text-title-primary: var(--brand-green-500);
+    --text-title-secondary: var(--brand-yellow-400);
+    --text-subtitle: var(--opacity-light-gray-88);
+    --text-body: var(--opacity-light-gray-72);
+    --text-caption: var(--opacity-light-gray-64);
+
+    // Cores semânticas — superfícies
+    --surface-primary: var(--neutral-gray-950);
+    --surface-secondary: var(--neutral-gray-900);
+    --surface-subtle: var(--opacity-green-8);
+    --surface-elevation: var(--opacity-green-16);
+    --surface-disabled: var(--neutral-gray-800);
+
+    // Cores semânticas — ações
+    --action-primary-default: var(--brand-green-500);
+    --action-primary-hover: var(--brand-green-400);
+    --action-primary-pressed: var(--brand-green-300);
+    --action-secondary-default: var(--brand-yellow-400);
+    --action-secondary-hover: var(--brand-yellow-500);
+    --action-secondary-pressed: var(--brand-yellow-600);
+
+    // Cores semânticas — bordas
+    --border-default: var(--opacity-light-gray-16);
+    --border-dark: var(--opacity-light-gray-24);
+    --border-darker: var(--opacity-light-gray-32);
+
+    // Tipografia
+    --font-heading: "Big Shoulders", sans-serif;
+    --font-body: "Raleway", sans-serif;
+
+    --font-size-body-xl: 20px;
+    --font-size-body-lg: 18px;
+    --font-size-body-md: 16px;
+    --font-size-body-sm: 14px;
+    --font-size-body-xs: 12px;
+
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-extrabold: 800;
+}

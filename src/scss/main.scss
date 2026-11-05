@@ -1,0 +1,50 @@
+// ==========================================
+// 1. IDENTIDADE VISUAL
+// ==========================================
+
+@import "abstracts/tokens";
+@import "abstracts/variables";
+
+
+// ==========================================
+// 2. BOOTSTRAP
+// ==========================================
+
+@import "bootstrap/scss/bootstrap";
+
+
+// ==========================================
+// 3. ESTILOS GLOBAIS
+// ==========================================
+
+@import "base/global";
+@import "base/typography";
+@import "base/about";
+@import "base/footer";
+@import "base/breve";
+@import "base/login";
+
+
+// ==========================================
+// 4. COMPONENTES
+// ==========================================
+
+@import "components/buttons";
+@import "components/cards";
+@import "components/sidebar";
+@import "components/topbar";
+@import "components/discount-banner";
+@import "components/hero";
+
+
+// ==========================================
+// 5. UTILITÁRIOS
+// ==========================================
+
+@import "utilities/typography";
+@import "utilities/backgrounds";
+
+// ==========================================
+// 6. ESTILOS DAS DOBRAS
+// ==========================================
+

@@ -1,0 +1,243 @@
+
+// ==========================================
+// SIDEBAR
+// ==========================================
+
+.app-sidebar {
+    --bs-offcanvas-width: 260px;
+
+    width: 260px;
+    flex: 0 0 260px;
+
+    background-color: var(--surface-secondary) !important;
+    border-right: 1px solid var(--border-default);
+
+    color: var(--text-body);
+}
+
+
+// ==========================================
+// MARCA
+// ==========================================
+
+.sidebar-brand {
+    display: block;
+
+    margin-bottom: 28px;
+
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: var(--font-weight-extrabold);
+
+    color: var(--text-title-neutral);
+    text-decoration: none;
+}
+
+
+// ==========================================
+// NAVEGAÇÃO
+// ==========================================
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 12px;
+
+    color: var(--text-body);
+    text-decoration: none;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body-sm);
+    font-weight: var(--font-weight-regular);
+    
+    border-radius: 6px;
+    
+    transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+    
+    &:hover {
+        color: var(--action-secondary-default);
+        background-color: var(--opacity-yellow-8);
+        font-weight: var(--font-weight-semibold);
+    }
+    
+    &.active {
+        color: var(--action-secondary-default);
+        background-color: var(--opacity-yellow-16);
+        font-weight: var(--font-weight-semibold);
+    }
+}
+
+
+// ==========================================
+// DIVISOR
+// ==========================================
+
+.sidebar-divider {
+    height: 1px;
+    margin: 14px 0;
+
+    background-color: var(--border-default);
+}
+
+
+// ==========================================
+// RODAPÉ
+// ==========================================
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2px;
+    padding-top: 16px;
+
+    color: var(--text-caption);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body-xs);
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+}
+
+.sidebar-footer-image {
+    display: block;
+    width: auto;
+    height: 160px;
+    object-fit: contain;
+}
+
+.sidebar-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    
+    color: var(--brand-yellow-500);
+    text-decoration: none;
+
+    background-color: var(--surface-elevation);
+    
+    img {
+        width: 48px;
+        height: 48px;
+
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    span {
+        font-size: var(--font-size-body-md);
+        font-weight: var(--font-weight-semibold);
+    }
+    button {
+        font-size: var(--font-size-body-sm);
+        font-weight: var(--font-weight-semibold);
+    }
+}
+
+
+// ==========================================
+// ÍCONES SVG
+// ==========================================
+
+.sidebar-icon,
+.ui-icon {
+    display: inline-block;
+    flex-shrink: 0;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: currentColor;
+
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+}
+
+
+// Mapa de ícones.
+$custom-icons: (
+    acao: "acao.svg",
+    arrow-left: "arrow-left.svg",
+    arrow-right: "arrow-right.svg",
+    aventura: "aventura.svg",
+    cart: "cart.svg",
+    categorias: "categorias.svg",
+    chat: "chat.svg",
+    chevron-down: "chevron-down.svg",
+    conquistas: "conquistas.svg",
+    curadores: "curadores.svg",
+    desejos: "desejos.svg",
+    estrategia: "estrategia.svg",
+    forum: "forum.svg",
+    indie: "indie.svg",
+    inicio: "inicio.svg",
+    lancamentos: "lancamentos.svg",
+    loja: "loja.svg",
+    meus-jogos: "meus-jogos.svg",
+    notification: "notification.svg",
+    profile: "profile.svg",
+    promocoes: "promocoes.svg",
+    rpg: "rpg.svg",
+    sparkles: "sparkles.svg",
+    suporte: "suporte.svg",
+    menu: "menu.svg",
+    search: "search.svg",
+);
+
+@each $name, $file in $custom-icons {
+    .icon-#{$name} {
+        mask-image: url("../../public/icons/#{$file}");
+        -webkit-mask-image: url("../../public/icons/#{$file}");
+    }
+}
+
+
+// ==========================================
+// RESPONSIVIDADE
+// ==========================================
+
+@media (min-width: 992px) {
+
+    .app-sidebar {
+        position: sticky;
+        top: 0;
+
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .app-sidebar .offcanvas-body {
+        min-height: 100%;
+        padding: 24px 16px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .app-sidebar .offcanvas-body {
+        padding: 20px 16px;
+    }
+
+    .sidebar-brand {
+        margin-bottom: 0;
+    }
+
+}

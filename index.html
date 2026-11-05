@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./build/css/main.css">
+
+    <title>Iara Games</title>
+</head>
+
+<body>
+
+    <div class="d-flex min-vh-100">
+
+        <!-- SIDEBAR -->
+        <aside class="offcanvas-lg offcanvas-start app-sidebar flex-shrink-0" tabindex="-1" id="sidebarMenu"
+            aria-label="Menu principal">
+
+            <!-- Cabeçalho visível somente no mobile -->
+            <div class="offcanvas-header d-lg-none d-flex justify-content-center align-items-center">
+                <a href="#" class="topbar-mobile-brand">
+                    <img src="./public/images/logo.png" alt="Logo da Iara Games nas cores branca e amarelo"
+                        class="logo">
+                </a>
+
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    data-bs-target="#sidebarMenu" aria-label="Fechar menu"></button>
+            </div>
+
+            <!-- Conteúdo da sidebar -->
+            <div class="offcanvas-body d-flex flex-column">
+
+                <a href="#" class="sidebar-brand d-none d-lg-block">
+                    <img src="./public/images/logo.png" alt="Logo da Iara Games nas cores branca e amarelo"
+                        class="logo mx-auto d-block">
+                </a>
+
+                <nav class="sidebar-nav">
+
+                    <a href="#" class="sidebar-link active">
+                        <span class="sidebar-icon icon-inicio"></span>
+                        <span>Início</span>
+                    </a>
+
+                    <a href="#sobre" class="sidebar-link">
+                        <span class="sidebar-icon icon-inicio"></span>
+                        <span>Sobre Nós</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-lancamentos"></span>
+                        <span>Lançamentos</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-loja"></span>
+                        <span>Loja</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-promocoes"></span>
+                        <span>Promoções</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-curadores"></span>
+                        <span>Curadores</span>
+                    </a>
+
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon icon-categorias"></span>
+                        <span>Categorias</span>
+                    </a>
+
+                    <div class="sidebar-divider"></div>
+
+                    <div class="sidebar-profile d-flex d-lg-none">
+                        <img src="./public/images/avatar-usuario.png" alt="Foto do usuário">
+                        <div class="d-flex flex-column gap-2">
+                            <span>Olá, Iara Gamer!</span>
+                            <button class="btn btn-outline-primary btn-sm">Ver perfil</button>
+                        </div>
+                    </div>
+
+                    <a href="#breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-meus-jogos"></span>
+                        <span>Meus jogos</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-desejos"></span>
+                        <span>Lista de desejos</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-conquistas"></span>
+                        <span>Conquistas</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-forum"></span>
+                        <span>Fórum</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-suporte"></span>
+                        <span>Suporte</span>
+                    </a>
+
+                </nav>
+
+                <div class="sidebar-footer d-none d-lg-flex">
+                    <img src="./public/images/footer-iara.webp"
+                        alt="Imagem de uma mulher indígena dentro da água em formato minimalista nas cores verde e amarelo"
+                        class="mx-auto mb-2 sidebar-footer-image">
+
+                    <span class="text-caption d-block">
+                        © 2026 Iara Games
+                    </span>
+
+                    <span class="text-caption d-block">
+                        Todos os direitos reservados
+                    </span>
+
+                </div>
+            </div>
+        </aside>
+
+
+        <!-- ÁREA PRINCIPAL -->
+        <div class="flex-grow-1 min-w-0 d-flex flex-column">
+
+            <!-- TOPBAR -->
+            <header class="topbar">
+                <div class="container d-flex align-items-center">
+
+                    <div class="topbar-left d-flex align-items-center flex-grow-1">
+
+                        <button class="btn sidebar-toggle d-lg-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-label="Abrir menu">
+                            <span class="ui-icon icon-menu"></span>
+                        </button>
+
+                        <div class="topbar-search d-flex align-items-center">
+                            <span class="ui-icon icon-search"></span>
+                            <input type="search" placeholder="Buscar jogos, estúdios e mais..."
+                                aria-label="Buscar jogos">
+                        </div>
+
+                    </div>
+
+                    <div class="d-none d-lg-flex">
+                        <div class="topbar-actions d-flex align-items-center">
+                            <a href="#" class="topbar-icon" aria-label="Carrinho">
+                                <span class="ui-icon icon-cart"></span>
+                            </a>
+
+                            <a href="#" class="topbar-icon" aria-label="Notificações">
+                                <span class="ui-icon icon-notification"></span>
+                            </a>
+
+                            <a href="#" class="topbar-profile">
+                                <img src="./public/images/avatar-usuario.png" alt="Foto do usuário logado">
+                                <span class="ui-icon icon-chevron-down"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+
+            <hr class="my-1">
+
+            <!-- CONTEÚDO -->
+            <main class="flex-grow-1">
+                <div class="container">
+
+                    <!-- BANNER DE DESCONTO -->
+                    <aside
+                        class="banner-bg-radial d-flex flex-column flex-xl-row align-items-xl-center justify-content-between gap-3 p-3 p-md-4 mb-5">
+
+                        <!-- Selo e informações -->
+                        <div class="d-flex align-items-center gap-3 gap-md-4">
+                            <div class="discount-banner-offer flex-shrink-0 text-center px-3 py-2 rounded-3">
+                                <p class="body-semibold-xs mb-1">
+                                    Oferta por tempo limitado
+                                </p>
+
+                                <p class="mb-0">
+                                    50% OFF
+                                </p>
+                            </div>
+
+                            <div>
+                                <h6 class="headlines-h6 text-title-neutral mb-2">
+                                    Os primeiros
+                                    <span class="text-title-secondary">100 usuários</span>
+                                    ganham 50% de desconto na primeira compra!
+                                </h6>
+
+                                <p class="body-regular-xs text-body mb-0">
+                                    Cadastre-se agora e garanta seu desconto antes que as vagas acabem.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Botão -->
+                        <a href="login.html" class="btn btn-iara-secondary">
+                            Quero me cadastrar
+                            <span class="ui-icon icon-arrow-right" aria-hidden="true"></span>
+                        </a>
+
+                    </aside>
+
+                    <!-- DOBRA HERO -->
+                    <section class="hero-section row g-4">
+                        <!-- Hero principal -->
+                        <div class="col-12 col-lg-9">
+                            <article class="hero-main banner-bg-radial">
+
+                                <!-- Imagem de fundo -->
+                                <img src="public/images/hero.webp"
+                                    alt="Imagem de uma mulher indígena dentro da água em formato minimalista nas cores verde e amarelo"
+                                    class="hero-main-image" />
+
+                                <!-- Camada escura -->
+                                <div class="hero-main-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- Conteúdo -->
+                                <div class="hero-main-content d-flex flex-column justify-content-center p-4 p-md-5">
+                                    <h1 class="headlines-h1">
+                                        Jogos feitos<br />
+                                        no Brasil,<br />
+                                        <span>para o mundo</span>
+                                    </h1>
+
+                                    <p class="text-body mt-3">
+                                        Descubra histórias únicas, culturas incríveis e experiências que
+                                        só o Brasil pode criar.
+                                    </p>
+
+                                    <div class="mt-4">
+                                        <a href="breve.html" class="btn btn-iara-secondary">
+                                            Explorar jogos
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Destaque da semana -->
+                        <div class="col-12 col-lg-3">
+                            <article class="banner-bg-green hero-feature d-flex flex-column p-3 p-md-4">
+
+                                <!-- Título -->
+                                <div
+                                    class="hero-feature-heading d-flex align-items-center justify-content-center gap-2 mb-3">
+                                    <img src="public/images/Flourish-l.svg" aria-hidden="true" alt="" />
+
+                                    <span>Destaque da semana</span>
+
+                                    <img src="public/images/Flourish-r.svg" alt="" aria-hidden="true" />
+                                </div>
+
+                                <!-- Imagem do jogo -->
+                                <div class="hero-feature-image rounded-3">
+                                    <img src="public/images/hero-card.webp" alt="IYÁ e o Círculo da Natureza" />
+
+                                    <div class="hero-feature-overlay w-100 h-100"></div>
+
+                                    <div class="hero-feature-caption">
+                                        <h2>IYÁ</h2>
+                                        <p>e o Círculo da Natureza</p>
+                                    </div>
+
+                                </div>
+
+                                <!-- Informações -->
+                                <div class="hero-feature-pricing d-flex align-items-center gap-3 my-3">
+                                    <span class="hero-feature-discount">-20%</span>
+                                    <span class="hero-feature-price">R$ 39,90</span>
+                                    <span class="hero-feature-old-price">R$ 49,90</span>
+                                </div>
+
+                                <a href="breve.html" class="btn btn-iara-outline-secondary w-100">
+                                    Ver detalhes
+                                </a>
+
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- DOBR ESCOLHAS DA IARA -->
+                    <section class="games-section">
+
+                        <!-- Título da seção -->
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="public/images/Flourish-l.svg" alt="" aria-hidden="true" />
+
+                                <h2 class="games-section-title">Escolhas da Iara</h2>
+
+                                <img src="public/images/Flourish-r.svg" alt="" aria-hidden="true" />
+                            </div>
+
+                            <a href="breve.html" class="games-section-link">
+                                Ver todos
+                                <span class="ui-icon icon-arrow-right" aria-hidden="true"></span>
+                            </a>
+
+                        </div>
+
+                        <!-- Cards dos jogos -->
+                        <div class="games-grid">
+
+                            <!-- Card 1 -->
+                            <a href="breve.html" class="game-card-link">
+                                <article class="game-card">
+
+                                    <div class="game-card__image">
+                                        <img src="public/images/correnteza.webp" alt="Correnteza" />
+
+                                        <div class="game-card__image-overlay"></div>
+
+                                        <span class="game-card__category">
+                                            Aventura
+                                        </span>
+
+                                        <h3 class="game-card__title">
+                                            Correnteza
+                                        </h3>
+                                    </div>
+
+                                    <div class="game-card__content">
+
+                                        <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
+                                            ★★★★<span>★</span>
+                                        </div>
+
+                                        <div class="game-card__pricing">
+                                            <span class="game-card__discount">40%</span>
+                                            <span class="game-card__price">R$ 29,90</span>
+                                            <span class="game-card__old-price">R$ 49,90</span>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+                            </a>
+                            <!-- Card 2 -->
+                            <a href="breve.html" class="game-card-link">
+                                <article class="game-card">
+
+                                    <div class="game-card__image">
+                                        <img src="public/images/sertao-profundo.webp" alt="Sertão Profundo" />
+
+                                        <div class="game-card__image-overlay"></div>
+
+                                        <span class="game-card__category">
+                                            RPG
+                                        </span>
+
+                                        <h3 class="game-card__title">
+                                            Sertão Profundo
+                                        </h3>
+                                    </div>
+
+                                    <div class="game-card__content">
+
+                                        <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
+                                            ★★★★★
+                                        </div>
+
+                                        <div class="game-card__pricing">
+                                            <span class="game-card__discount">30%</span>
+                                            <span class="game-card__price">R$ 55,90</span>
+                                            <span class="game-card__old-price">R$ 79,90</span>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+                            </a>
+
+                            <!-- Card 3 -->
+                            <a href="breve.html" class="game-card-link">
+                                <article class="game-card">
+
+                                    <div class="game-card__image">
+                                        <img src="public/images/noite-neon.webp" alt="Noite de Neon" />
+
+                                        <div class="game-card__image-overlay"></div>
+
+                                        <span class="game-card__category">
+                                            Ação
+                                        </span>
+
+                                        <h3 class="game-card__title">
+                                            Noite de Neon
+                                        </h3>
+                                    </div>
+
+                                    <div class="game-card__content">
+                                        <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
+                                            ★★★★<span>★</span>
+                                        </div>
+
+                                        <div class="game-card__pricing">
+                                            <span class="game-card__discount">40%</span>
+                                            <span class="game-card__price">R$ 29,90</span>
+                                            <span class="game-card__old-price">R$ 49,90</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                            <!-- Card 4 -->
+                            <a href="breve.html" class="game-card-link">
+                                <article class="game-card">
+
+                                    <div class="game-card__image">
+                                        <img src="public/images/arquipelago.webp" alt="Arquipélago" />
+
+                                        <div class="game-card__image-overlay"></div>
+
+                                        <span class="game-card__category">
+                                            Estratégia
+                                        </span>
+
+                                        <h3 class="game-card__title">
+                                            Arquipélago
+                                        </h3>
+                                    </div>
+
+                                    <div class="game-card__content">
+                                        <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
+                                            ★★★★<span>★</span>
+                                        </div>
+
+                                        <div class="game-card__pricing">
+                                            <span class="game-card__discount">25%</span>
+                                            <span class="game-card__price">R$ 26,17</span>
+                                            <span class="game-card__old-price">R$ 34,90</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- DOBRA CATEGORIAS -->
+                    <section class="categories-section">
+
+                        <!-- Título -->
+                        <div class="categories-section-heading d-flex align-items-center gap-3 mb-4">
+                            <img src="public/images/Flourish-l.svg" alt="" aria-hidden="true" />
+
+                            <h2 class="headlines-h6 text-title-secondary">
+                                Navegue por categorias
+                            </h2>
+
+                            <img src="public/images/Flourish-r.svg" alt="" aria-hidden="true" />
+                        </div>
+
+                        <!-- Grid de categorias -->
+                        <div class="row g-3">
+
+                            <!-- RPG -->
+                            <div class="col-12 col-sm-6 col-lg">
+                                <a href="breve.html" class="category-card-link">
+                                    <article
+                                        class="banner-bg-green d-flex flex-column align-items-center justify-content-center p-3">
+                                        <div
+                                            class="banner-bg-yellow text-title-secondary d-flex align-items-center justify-content-center p-3 mb-3">
+                                            <span class="ui-icon icon-rpg fs-2"></span>
+
+                                        </div>
+
+                                        <h3 class="text-title body-extrabold-sm">RPG</h3>
+                                        <p class="text-caption body-regular-sm">Mundos e narrativas</p>
+                                    </article>
+                                </a>
+                            </div>
+
+                            <!-- Ação -->
+                            <div class="col-12 col-sm-6 col-lg">
+                                <a href="breve.html" class="category-card-link">
+                                    <article
+                                        class="banner-bg-green d-flex flex-column align-items-center justify-content-center p-3">
+                                        <div
+                                            class="banner-bg-yellow text-title-secondary d-flex align-items-center justify-content-center p-3 mb-3">
+                                            <span class="ui-icon icon-acao fs-3"></span>
+                                        </div>
+
+                                        <h3 class="text-title body-extrabold-sm">Ação</h3>
+                                        <p class="text-caption body-regular-sm">Ritmo e adrenalina</p>
+                                    </article>
+                                </a>
+                            </div>
+
+                            <!-- Aventura -->
+                            <div class="col-12 col-sm-6 col-lg">
+                                <a href="breve.html" class="category-card-link">
+                                    <article
+                                        class="banner-bg-green d-flex flex-column align-items-center justify-content-center p-3">
+                                        <div
+                                            class="banner-bg-yellow text-title-secondary d-flex align-items-center justify-content-center p-3 mb-3">
+                                            <span class="ui-icon icon-aventura fs-5"></span>
+                                        </div>
+
+                                        <h3 class="text-title body-extrabold-sm">Aventura</h3>
+                                        <p class="text-caption body-regular-sm">Exploração e histórias</p>
+                                    </article>
+                                </a>
+                            </div>
+
+                            <!-- Estratégia -->
+                            <div class="col-12 col-sm-6 col-lg">
+                                <a href="breve.html" class="category-card-link">
+                                    <article
+                                        class="banner-bg-green d-flex flex-column align-items-center justify-content-center p-3">
+                                        <div
+                                            class="banner-bg-yellow text-title-secondary d-flex align-items-center justify-content-center p-3 mb-3">
+                                            <span class="ui-icon icon-estrategia fs-5"></span>
+                                        </div>
+
+                                        <h3 class="text-title body-extrabold-sm">Estratégia</h3>
+                                        <p class="text-caption body-regular-sm">Decisão e planejamento</p>
+                                    </article>
+                                </a>
+                            </div>
+
+                            <!-- Indie -->
+                            <div class="col-12 col-sm-6 col-lg">
+                                <a href="breve.html" class="category-card-link">
+                                    <article
+                                        class="banner-bg-green d-flex flex-column align-items-center justify-content-center p-3">
+                                        <div
+                                            class="banner-bg-yellow text-title-secondary d-flex align-items-center justify-content-center p-3 mb-3">
+                                            <span class="ui-icon icon-indie fs-5"></span>
+                                        </div>
+
+                                        <h3 class="text-title body-extrabold-sm">Indie</h3>
+                                        <p class="text-caption body-regular-sm">Criatividade independente</p>
+                                    </article>
+                                </a>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- DOBRA CTA -->
+                    <section class="cta-section">
+                        <div
+                            class="banner-bg-radial d-flex flex-column align-items-center justify-content-center text-center gap-4 p-4 p-md-5">
+
+                            <h2 class="headlines-h2 text-title-neutral mb-0">
+                                Pronto para descobrir seu<br class="d-none d-md-block" />
+                                próximo jogo?
+                            </h2>
+
+                            <p class="text-subtitle body-regular-lg mb-0">
+                                Navegue por categorias, explore os destaques e<br class="d-none d-md-block" />
+                                encontre algo que combine com você.
+                            </p>
+
+                            <a href="breve.html" class="btn btn-iara-secondary">
+                                Começar a explorar
+                                <span class="ui-icon icon-arrow-right" aria-hidden="true"></span>
+                            </a>
+
+                        </div>
+                    </section>
+
+                    <!-- SECTION SOBRE -->
+                    <section id="sobre" class="about-section">
+                        <div class="about-grid">
+                            <!-- SOBRE A IARA GAMES -->
+                            <article class="about-content d-flex flex-column align-items-start gap-3">
+
+                                <span class="about-label text-title-secondary body-semibold-xs">
+                                    Nossa proposta
+                                </span>
+
+                                <h2 class="headlines-h5 text-title-neutral">
+                                    Feita para quem quer
+                                    <span class="text-title-secondary">jogar</span>, não
+                                    para quem já sabe o que comprar
+                                </h2>
+
+                                <p class="body-regular-md text-body">
+                                    A Iara Games organiza a descoberta de jogos em torno do usuário
+                                    — não da vitrine comercial. Catálogo curado, navegação por
+                                    categorias e uma identidade visual brasileira que distingue a
+                                    plataforma das alternativas globais.
+                                </p>
+
+                                <p class="body-regular-md text-body">
+                                    Projetada desde o início com acessibilidade como requisito, não
+                                    como detalhe — para que jogar seja uma experiência acessível a todos.
+                                </p>
+
+                                <a href="breve.html" class="btn btn-iara-secondary mt-2">
+                                    Conhecer o projeto
+                                    <span class="ui-icon icon-arrow-right" aria-hidden="true"></span>
+                                </a>
+
+                            </article>
+
+                            <!-- COMUNIDADE -->
+                            <article
+                                class="about-community banner-bg-green d-flex flex-column justify-content-center gap-3 p-4">
+
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="public/images/Flourish-l.svg" alt="" aria-hidden="true" />
+                                    <span class="body-extrabold-xs text-title-neutral text-uppercase">
+                                        Da comunidade
+                                    </span>
+                                </div>
+
+                                <div class="d-flex align-items-center gap-3">
+                                    <div
+                                        class="about-community-avatar d-flex align-items-center justify-content-center">
+                                        <span class="ui-icon icon-profile" aria-hidden="true"></span>
+                                    </div>
+
+                                    <div>
+                                        <p class="body-semibold-sm text-title-neutral mb-1">
+                                            Estúdio Moringa
+                                        </p>
+                                        <p class="body-regular-xs text-caption mb-0">
+                                            2 dias atrás
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="body-regular-sm text-body mb-0">
+                                    Muito feliz em compartilhar um pouco do nosso processo
+                                    criativo com vocês! Esperamos que gostem 💚
+                                </p>
+
+                                <div class="about-community-image rounded-3 overflow-hidden">
+                                    <img src="public/images/comunidade.webp"
+                                        alt="Imagem de um lago em estilo pantanal com árvores ao redor" />
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <span class="ui-icon icon-desejos text-title-secondary"></span>
+                                            <span class="body-regular-sm text-caption">128</span>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-1">
+                                            <span class="ui-icon icon-chat text-title-secondary"></span>
+                                            <span class="body-regular-sm text-caption">32</span>
+                                        </div>
+                                    </div>
+
+                                    <a href="breve.html" class="body-extrabold-xs text-title-secondary text-uppercase">
+                                        Ver fórum
+                                    </a>
+                                </div>
+
+                            </article>
+
+                        </div>
+                    </section>
+
+
+
+                </div>
+                <section class="bg-pattern-indigena w-100 mt-5"></section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer-main p-4 p-lg-5">
+
+                    <!-- IDENTIDADE -->
+                    <div class="d-flex flex-column align-items-start gap-4">
+                        <img src="public/images/logo-footer.png" alt="Logo da Iara Games nas cores verde e amarelo"
+                            class="object-fit-contain" style="height: 3.5rem; width: auto;">
+
+                        <p class="text-caption body-regular-sm mb-0">
+                            Plataforma de descoberta de jogos <br>
+                            digitais com identidade brasileira.
+                        </p>
+                    </div>
+
+                    <!-- PLATAFORMA -->
+                    <div>
+                        <h4 class="text-title-primary body-semibold-sm text-uppercase">
+                            Plataforma
+                        </h4>
+
+                        <ul class="list-unstyled d-flex flex-column gap-3 mt-3 mb-0">
+                            <li class="text-caption body-regular-sm"><a href="index.html">Início</a></li>
+                            <li class="text-caption body-regular-sm"><a href="breve.html">Loja</a></li>
+                            <li class="text-caption body-regular-sm"><a href="breve.html">Lançamentos</a></li>
+                            <li class="text-caption body-regular-sm"><a href="breve.html">Promoções</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COMUNIDADE -->
+                    <div>
+                        <h4 class="text-title-primary body-semibold-sm text-uppercase">
+                            Comunidade
+                        </h4>
+
+                        <ul class="list-unstyled d-flex flex-column gap-3 mt-3 mb-0">
+                            <li class="text-caption body-regular-sm"><a href="breve.html">Fórum</a></li>
+                            <li class="text-caption body-regular-sm"><a href="breve.html">Curadores</a></li>
+                            <li class="text-caption body-regular-sm"><a href="breve.html">Avaliações</a></li>
+                            <li class="text-caption body-regular-sm"><a href="breve.html">Newsletter</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- EMPRESA -->
+                    <div>
+                        <h4 class="text-title-primary body-semibold-sm text-uppercase">
+                            Empresa
+                        </h4>
+
+                        <ul class="list-unstyled d-flex flex-column gap-3 mt-3 mb-0">
+                            <li class="text-caption body-regular-sm"><a href="#sobre">Sobre nós</a></li>
+                            <li class="text-caption body-regular-sm"><a href="breve.html">Contato</a></li>
+                            <li class="text-caption body-regular-sm"><a href="breve.html">Privacidade</a></li>
+                            <li class="text-caption body-regular-sm"><a href="breve.html">Termos</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- CRÉDITOS -->
+                <div
+                    class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 px-4 px-lg-5 py-4">
+                    <p class="text-caption body-regular-xs mb-0">
+                        © 2026 Iara Games. Projeto acadêmico.
+                    </p>
+
+                    <p class="text-title-secondary body-regular-xs mb-0">
+                        Desenvolvido pela equipe Ananda · Thais · Vidal · Pâmela · Vinicius
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
