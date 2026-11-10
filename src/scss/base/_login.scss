@@ -1,8 +1,21 @@
 // Página de login e cadastro
+header{
+    border-color: var(--border-default) !important;
+}
 
 .login-logo {
     width: 150px;
     height: auto;
+}
+
+.login-link-back {
+    color: var(--text-body);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: var(--action-primary-hover);
+    }
 }
 
 .login-main {
@@ -26,14 +39,14 @@
 
 .login-eyebrow {
     color: var(--brand-green-500);
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
+
+    span {
+        color: var(--brand-yellow-400);
+    }
 }
 
 .login-promotion {
-    max-width: 460px;
+    // max-width: 460px;
     padding: 1.5rem;
     background-color: var(--surface-elevation);
     border: 1px solid var(--border-default);
@@ -41,12 +54,18 @@
 }
 
 .login-promotion-value {
-    color: var(--brand-yellow-400);
-    font-family: var(--font-heading);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: var(--brand-yellow-400);
+    color: var(--surface-primary);
     font-size: 3rem;
-    font-weight: 800;
-    line-height: 1;
     margin-bottom: 0.75rem;
+
+    span {
+        display: block;
+
+    }
 }
 
 .login-form-column {
@@ -56,7 +75,7 @@
 
 .login-form-wrapper {
     width: 100%;
-    max-width: 480px;
+    // max-width: 480px;
     padding: 0;
     background: transparent;
     border: 0;
