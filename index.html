@@ -27,7 +27,7 @@
 
             <!-- Cabeçalho visível somente no mobile -->
             <div class="offcanvas-header d-lg-none d-flex justify-content-center align-items-center">
-                <a href="#" class="topbar-mobile-brand">
+                <a href="index.html" class="topbar-mobile-brand">
                     <img src="./public/images/logo.png" alt="Logo da Iara Games nas cores branca e amarelo"
                         class="logo">
                 </a>
@@ -39,45 +39,45 @@
             <!-- Conteúdo da sidebar -->
             <div class="offcanvas-body d-flex flex-column">
 
-                <a href="#" class="sidebar-brand d-none d-lg-block">
+                <a href="index.html" class="sidebar-brand d-none d-lg-flex">
                     <img src="./public/images/logo.png" alt="Logo da Iara Games nas cores branca e amarelo"
-                        class="logo mx-auto d-block">
+                        class="logo">
                 </a>
 
                 <nav class="sidebar-nav">
 
-                    <a href="#" class="sidebar-link active">
-                        <span class="sidebar-icon icon-inicio"></span>
+                    <a href="#" class="sidebar-link active" aria-current="page">
+                        <span class="sidebar-icon icon-inicio" aria-hidden="true"></span>
                         <span>Início</span>
                     </a>
 
                     <a href="#sobre" class="sidebar-link">
-                        <span class="sidebar-icon icon-inicio"></span>
+                        <span class="sidebar-icon icon-sobre" aria-hidden="true"></span>
                         <span>Sobre Nós</span>
                     </a>
 
                     <a href="breve.html" class="sidebar-link">
-                        <span class="sidebar-icon icon-lancamentos"></span>
+                        <span class="sidebar-icon icon-lancamentos" aria-hidden="true"></span>
                         <span>Lançamentos</span>
                     </a>
 
                     <a href="breve.html" class="sidebar-link">
-                        <span class="sidebar-icon icon-loja"></span>
+                        <span class="sidebar-icon icon-loja" aria-hidden="true"></span>
                         <span>Loja</span>
                     </a>
 
                     <a href="breve.html" class="sidebar-link">
-                        <span class="sidebar-icon icon-promocoes"></span>
+                        <span class="sidebar-icon icon-promocoes" aria-hidden="true"></span>
                         <span>Promoções</span>
                     </a>
 
                     <a href="breve.html" class="sidebar-link">
-                        <span class="sidebar-icon icon-curadores"></span>
+                        <span class="sidebar-icon icon-curadores" aria-hidden="true"></span>
                         <span>Curadores</span>
                     </a>
 
                     <a href="#" class="sidebar-link">
-                        <span class="sidebar-icon icon-categorias"></span>
+                        <span class="sidebar-icon icon-categorias" aria-hidden="true"></span>
                         <span>Categorias</span>
                     </a>
 
@@ -91,28 +91,28 @@
                         </div>
                     </div>
 
-                    <a href="#breve.html" class="sidebar-link">
-                        <span class="sidebar-icon icon-meus-jogos"></span>
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-meus-jogos" aria-hidden="true"></span>
                         <span>Meus jogos</span>
                     </a>
 
                     <a href="breve.html" class="sidebar-link">
-                        <span class="sidebar-icon icon-desejos"></span>
+                        <span class="sidebar-icon icon-desejos" aria-hidden="true"></span>
                         <span>Lista de desejos</span>
                     </a>
 
                     <a href="breve.html" class="sidebar-link">
-                        <span class="sidebar-icon icon-conquistas"></span>
+                        <span class="sidebar-icon icon-conquistas" aria-hidden="true"></span>
                         <span>Conquistas</span>
                     </a>
 
                     <a href="breve.html" class="sidebar-link">
-                        <span class="sidebar-icon icon-forum"></span>
+                        <span class="sidebar-icon icon-forum" aria-hidden="true"></span>
                         <span>Fórum</span>
                     </a>
 
                     <a href="breve.html" class="sidebar-link">
-                        <span class="sidebar-icon icon-suporte"></span>
+                        <span class="sidebar-icon icon-suporte" aria-hidden="true"></span>
                         <span>Suporte</span>
                     </a>
 
@@ -121,16 +121,24 @@
                 <div class="sidebar-footer d-none d-lg-flex">
                     <img src="./public/images/footer-iara.webp"
                         alt="Imagem de uma mulher indígena dentro da água em formato minimalista nas cores verde e amarelo"
-                        class="mx-auto mb-2 sidebar-footer-image">
+                        class="sidebar-footer-image">
 
-                    <span class="text-caption d-block">
-                        © 2026 Iara Games
-                    </span>
+                    <div class="sidebar-social">
+                        <a href="#" class="sidebar-social-link" aria-label="Instagram da Iara Games">
+                            <span class="ui-icon icon-chat" aria-hidden="true"></span>
+                        </a>
+                        <a href="breve.html" class="sidebar-social-link" aria-label="Comunidade">
+                            <span class="ui-icon icon-forum" aria-hidden="true"></span>
+                        </a>
+                        <a href="breve.html" class="sidebar-social-link" aria-label="Novidades">
+                            <span class="ui-icon icon-lancamentos" aria-hidden="true"></span>
+                        </a>
+                    </div>
 
-                    <span class="text-caption d-block">
+                    <p class="sidebar-copyright">
+                        © 2026 Iara Games<br>
                         Todos os direitos reservados
-                    </span>
-
+                    </p>
                 </div>
             </div>
         </aside>
@@ -147,11 +155,11 @@
 
                         <button class="btn sidebar-toggle d-lg-none" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-label="Abrir menu">
-                            <span class="ui-icon icon-menu"></span>
+                            <span class="ui-icon icon-menu" aria-hidden="true"></span>
                         </button>
 
                         <div class="topbar-search d-flex align-items-center">
-                            <span class="ui-icon icon-search"></span>
+                            <span class="ui-icon icon-search" aria-hidden="true"></span>
                             <input type="search" placeholder="Buscar jogos, estúdios e mais..."
                                 aria-label="Buscar jogos">
                         </div>
@@ -161,24 +169,24 @@
                     <div class="d-none d-lg-flex">
                         <div class="topbar-actions d-flex align-items-center">
                             <a href="#" class="topbar-icon" aria-label="Carrinho">
-                                <span class="ui-icon icon-cart"></span>
+                                <span class="ui-icon icon-cart" aria-hidden="true"></span>
                             </a>
 
                             <a href="#" class="topbar-icon" aria-label="Notificações">
-                                <span class="ui-icon icon-notification"></span>
+                                <span class="ui-icon icon-notification" aria-hidden="true"></span>
                             </a>
 
-                            <a href="#" class="topbar-profile">
-                                <img src="./public/images/avatar-usuario.png" alt="Foto do usuário logado">
-                                <span class="ui-icon icon-chevron-down"></span>
+                            <a href="login.html" class="topbar-profile" aria-label="Sua conta">
+                                <span class="topbar-profile-avatar">
+                                    <span class="ui-icon icon-profile" aria-hidden="true"></span>
+                                </span>
+                                <span class="ui-icon icon-chevron-down" aria-hidden="true"></span>
                             </a>
                         </div>
                     </div>
 
                 </div>
             </header>
-
-            <hr class="my-1">
 
             <!-- CONTEÚDO -->
             <main class="flex-grow-1">
@@ -189,7 +197,7 @@
                         class="banner-bg-radial d-flex flex-column flex-xl-row align-items-xl-center justify-content-between gap-3 p-3 p-md-4 mb-5">
 
                         <!-- Selo e informações -->
-                        <div class="d-flex align-items-center gap-3 gap-md-4">
+                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 gap-md-4">
                             <div class="discount-banner-offer flex-shrink-0 text-center px-3 py-2 rounded-3">
                                 <p class="body-semibold-xs mb-1">
                                     Oferta por tempo limitado
@@ -292,7 +300,7 @@
                                     <span class="hero-feature-old-price">R$ 49,90</span>
                                 </div>
 
-                                <a href="breve.html" class="btn btn-iara-outline-secondary w-100">
+                                <a href="jogo.html" class="btn btn-iara-outline-secondary w-100">
                                     Ver detalhes
                                 </a>
 
@@ -329,63 +337,70 @@
                                 <article class="game-card">
 
                                     <div class="game-card__image">
-                                        <img src="public/images/correnteza.webp" alt="Correnteza" />
+                                        <img src="public/images/correnteza.webp"
+                                            alt="Cachoeira desaguando em um rio revolto" />
 
                                         <div class="game-card__image-overlay"></div>
 
-                                        <span class="game-card__category">
-                                            Aventura
-                                        </span>
+                                        <span class="game-card__category">Aventura</span>
 
-                                        <h3 class="game-card__title">
-                                            Correnteza
-                                        </h3>
+                                        <h3 class="game-card__title">Correnteza</h3>
                                     </div>
 
                                     <div class="game-card__content">
 
                                         <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
-                                            ★★★★<span>★</span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star-empty"></span>
                                         </div>
 
                                         <div class="game-card__pricing">
-                                            <span class="game-card__discount">40%</span>
+                                            <span class="game-card__discount">-40%</span>
                                             <span class="game-card__price">R$ 29,90</span>
-                                            <span class="game-card__old-price">R$ 49,90</span>
+                                            <s class="game-card__old-price">
+                                                <span class="visually-hidden">Preço original: </span>R$ 49,90
+                                            </s>
                                         </div>
 
                                     </div>
 
                                 </article>
                             </a>
+
                             <!-- Card 2 -->
                             <a href="breve.html" class="game-card-link">
                                 <article class="game-card">
 
                                     <div class="game-card__image">
-                                        <img src="public/images/sertao-profundo.webp" alt="Sertão Profundo" />
+                                        <img src="public/images/sertao-profundo.webp"
+                                            alt="Paisagem árida do sertão sob luz dourada" />
 
                                         <div class="game-card__image-overlay"></div>
 
-                                        <span class="game-card__category">
-                                            RPG
-                                        </span>
+                                        <span class="game-card__category">RPG</span>
 
-                                        <h3 class="game-card__title">
-                                            Sertão Profundo
-                                        </h3>
+                                        <h3 class="game-card__title">Sertão Profundo</h3>
                                     </div>
 
                                     <div class="game-card__content">
 
-                                        <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
-                                            ★★★★★
+                                        <div class="game-card__rating" role="img" aria-label="5 de 5 estrelas">
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
                                         </div>
 
                                         <div class="game-card__pricing">
-                                            <span class="game-card__discount">30%</span>
+                                            <span class="game-card__discount">-30%</span>
                                             <span class="game-card__price">R$ 55,90</span>
-                                            <span class="game-card__old-price">R$ 79,90</span>
+                                            <s class="game-card__old-price">
+                                                <span class="visually-hidden">Preço original: </span>R$ 79,90
+                                            </s>
                                         </div>
 
                                     </div>
@@ -398,61 +413,70 @@
                                 <article class="game-card">
 
                                     <div class="game-card__image">
-                                        <img src="public/images/noite-neon.webp" alt="Noite de Neon" />
+                                        <img src="public/images/noite-neon.webp"
+                                            alt="Rua molhada à noite com luzes de néon" />
 
                                         <div class="game-card__image-overlay"></div>
 
-                                        <span class="game-card__category">
-                                            Ação
-                                        </span>
+                                        <span class="game-card__category">Ação</span>
 
-                                        <h3 class="game-card__title">
-                                            Noite de Neon
-                                        </h3>
+                                        <h3 class="game-card__title">Noite de Néon</h3>
                                     </div>
 
                                     <div class="game-card__content">
+
                                         <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
-                                            ★★★★<span>★</span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star-empty"></span>
                                         </div>
 
                                         <div class="game-card__pricing">
-                                            <span class="game-card__discount">40%</span>
-                                            <span class="game-card__price">R$ 29,90</span>
-                                            <span class="game-card__old-price">R$ 49,90</span>
+                                            <span class="game-card__price game-card__price--free">Grátis</span>
                                         </div>
+
                                     </div>
+
                                 </article>
                             </a>
+
                             <!-- Card 4 -->
                             <a href="breve.html" class="game-card-link">
                                 <article class="game-card">
 
                                     <div class="game-card__image">
-                                        <img src="public/images/arquipelago.webp" alt="Arquipélago" />
+                                        <img src="public/images/arquipelago.webp"
+                                            alt="Vista aérea de um arquipélago de ilhas" />
 
                                         <div class="game-card__image-overlay"></div>
 
-                                        <span class="game-card__category">
-                                            Estratégia
-                                        </span>
+                                        <span class="game-card__category">Estratégia</span>
 
-                                        <h3 class="game-card__title">
-                                            Arquipélago
-                                        </h3>
+                                        <h3 class="game-card__title">Arquipélago</h3>
                                     </div>
 
                                     <div class="game-card__content">
+
                                         <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
-                                            ★★★★<span>★</span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star-empty"></span>
                                         </div>
 
                                         <div class="game-card__pricing">
-                                            <span class="game-card__discount">25%</span>
+                                            <span class="game-card__discount">-25%</span>
                                             <span class="game-card__price">R$ 26,17</span>
-                                            <span class="game-card__old-price">R$ 34,90</span>
+                                            <s class="game-card__old-price">
+                                                <span class="visually-hidden">Preço original: </span>R$ 34,90
+                                            </s>
                                         </div>
+
                                     </div>
+
                                 </article>
                             </a>
                         </div>
@@ -687,77 +711,66 @@
 
 
                 </div>
-                <section class="bg-pattern-indigena w-100 mt-5"></section>
             </main>
 
+            <!-- PADRÃO + RODAPÉ -->
+            <div class="footer-pattern bg-pattern-indigena mt-5" aria-hidden="true"></div>
+
             <footer class="footer">
-                <div class="footer-main p-4 p-lg-5">
+                <div class="footer-main">
 
                     <!-- IDENTIDADE -->
-                    <div class="d-flex flex-column align-items-start gap-4">
+                    <div class="footer-brand">
                         <img src="public/images/logo-footer.png" alt="Logo da Iara Games nas cores verde e amarelo"
-                            class="object-fit-contain" style="height: 3.5rem; width: auto;">
+                            class="footer-logo">
 
-                        <p class="text-caption body-regular-sm mb-0">
-                            Plataforma de descoberta de jogos <br>
-                            digitais com identidade brasileira.
+                        <p class="footer-description">
+                            Plataforma de descoberta de jogos digitais com identidade brasileira.
                         </p>
                     </div>
 
                     <!-- PLATAFORMA -->
                     <div>
-                        <h4 class="text-title-primary body-semibold-sm text-uppercase">
-                            Plataforma
-                        </h4>
+                        <h2 class="footer-heading">Plataforma</h2>
 
-                        <ul class="list-unstyled d-flex flex-column gap-3 mt-3 mb-0">
-                            <li class="text-caption body-regular-sm"><a href="index.html">Início</a></li>
-                            <li class="text-caption body-regular-sm"><a href="breve.html">Loja</a></li>
-                            <li class="text-caption body-regular-sm"><a href="breve.html">Lançamentos</a></li>
-                            <li class="text-caption body-regular-sm"><a href="breve.html">Promoções</a></li>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="breve.html">Loja</a></li>
+                            <li><a href="breve.html">Lançamentos</a></li>
+                            <li><a href="breve.html">Promoções</a></li>
                         </ul>
                     </div>
 
                     <!-- COMUNIDADE -->
                     <div>
-                        <h4 class="text-title-primary body-semibold-sm text-uppercase">
-                            Comunidade
-                        </h4>
+                        <h2 class="footer-heading">Comunidade</h2>
 
-                        <ul class="list-unstyled d-flex flex-column gap-3 mt-3 mb-0">
-                            <li class="text-caption body-regular-sm"><a href="breve.html">Fórum</a></li>
-                            <li class="text-caption body-regular-sm"><a href="breve.html">Curadores</a></li>
-                            <li class="text-caption body-regular-sm"><a href="breve.html">Avaliações</a></li>
-                            <li class="text-caption body-regular-sm"><a href="breve.html">Newsletter</a></li>
+                        <ul class="footer-links">
+                            <li><a href="breve.html">Fórum</a></li>
+                            <li><a href="breve.html">Curadores</a></li>
+                            <li><a href="breve.html">Avaliações</a></li>
+                            <li><a href="breve.html">Newsletter</a></li>
                         </ul>
                     </div>
 
                     <!-- EMPRESA -->
                     <div>
-                        <h4 class="text-title-primary body-semibold-sm text-uppercase">
-                            Empresa
-                        </h4>
+                        <h2 class="footer-heading">Empresa</h2>
 
-                        <ul class="list-unstyled d-flex flex-column gap-3 mt-3 mb-0">
-                            <li class="text-caption body-regular-sm"><a href="#sobre">Sobre nós</a></li>
-                            <li class="text-caption body-regular-sm"><a href="breve.html">Contato</a></li>
-                            <li class="text-caption body-regular-sm"><a href="breve.html">Privacidade</a></li>
-                            <li class="text-caption body-regular-sm"><a href="breve.html">Termos</a></li>
+                        <ul class="footer-links">
+                            <li><a href="#sobre">Sobre nós</a></li>
+                            <li><a href="breve.html">Contato</a></li>
+                            <li><a href="breve.html">Privacidade</a></li>
+                            <li><a href="breve.html">Termos</a></li>
                         </ul>
                     </div>
 
                 </div>
 
                 <!-- CRÉDITOS -->
-                <div
-                    class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 px-4 px-lg-5 py-4">
-                    <p class="text-caption body-regular-xs mb-0">
-                        © 2026 Iara Games. Projeto acadêmico.
-                    </p>
-
-                    <p class="text-title-secondary body-regular-xs mb-0">
-                        Desenvolvido pela equipe Ananda · Thais · Vidal · Pâmela · Vinicius
-                    </p>
+                <div class="footer-bottom">
+                    <p>© 2026 Iara Games. Projeto acadêmico.</p>
+                    <p>Desenvolvido pela equipe Ananda · Thais · Vidal · Pâmela · Vinicius</p>
                 </div>
             </footer>
         </div>

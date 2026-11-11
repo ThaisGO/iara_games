@@ -1,0 +1,582 @@
+// ==========================================
+// PÁGINA DE DETALHES DO JOGO
+// ==========================================
+
+.game-details.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-block: 32px 48px;
+}
+
+.game-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+// ==========================================
+// TÍTULO DAS SEÇÕES (flourish + título)
+// ==========================================
+
+.game-section-heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    > img {
+        flex-shrink: 0;
+    }
+}
+
+// A base de 14rem faz o link ao lado ("Explorar a loja") quebrar
+// para a linha de baixo em telas estreitas em vez de espremer o título.
+.game-section-heading__title {
+    @include headline(32px);
+    flex: 1 1 14rem;
+    min-width: 0;
+    margin: 0;
+
+    color: var(--text-title-secondary);
+    line-height: 1.45;
+}
+
+
+// ==========================================
+// APRESENTAÇÃO
+// ==========================================
+
+.game-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.game-breadcrumb {
+    --bs-breadcrumb-margin-bottom: 0;
+    --bs-breadcrumb-item-padding-x: 0.5rem;
+    --bs-breadcrumb-divider-color: var(--text-caption);
+    --bs-breadcrumb-item-active-color: var(--text-caption);
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body-sm);
+    line-height: 1.3;
+
+    a {
+        color: var(--text-caption);
+
+        &:hover {
+            color: var(--action-secondary-default);
+        }
+    }
+}
+
+.game-intro__heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+}
+
+.game-intro__title {
+    @include headline(56px);
+    flex: 1 1 0;
+    min-width: min(100%, 16rem);
+    margin: 0;
+
+    color: var(--text-title-neutral);
+    font-size: clamp(2.5rem, 1.75rem + 2.5vw, 3.5rem);
+    line-height: 1.45;
+}
+
+.game-badge {
+    flex-shrink: 0;
+    padding: 8px 12px;
+
+    color: var(--brand-green-400);
+    background-color: var(--surface-secondary);
+    border-radius: 20px;
+
+    @include body-text(var(--font-size-body-xs), var(--font-weight-semibold));
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.game-intro__subtitle {
+    @include body-text(var(--font-size-body-lg));
+    margin: 0;
+
+    color: var(--text-subtitle);
+    line-height: 1.3;
+}
+
+
+// ==========================================
+// ARTE E COMPRA
+// ==========================================
+
+.game-showcase {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+
+    @media (min-width: 1200px) {
+        grid-template-columns: minmax(0, 1fr) 364px;
+    }
+}
+
+// Arte de divulgação
+.game-art {
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    min-height: 360px;
+    margin: 0;
+    padding: 0 32px 32px;
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    @media (max-width: 575.98px) {
+        padding: 0 20px 20px;
+    }
+}
+
+.game-art__image {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// Escurece o topo da arte e desenha a borda por cima da imagem
+.game-art__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    border: 1px solid var(--border-default);
+    border-radius: inherit;
+
+    background: linear-gradient(
+        to bottom,
+        rgb(from var(--surface-primary) r g b / 92%) 0%,
+        rgb(from var(--surface-primary) r g b / 0%) 55%,
+        rgb(from var(--surface-primary) r g b / 0%) 100%
+    );
+}
+
+.game-art__signature {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+
+    padding-block: 32px;
+}
+
+.game-art__name {
+    @include headline(64px);
+    margin: 0;
+
+    color: var(--text-title-secondary);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.game-art__tagline {
+    @include body-text(var(--font-size-body-sm), var(--font-weight-semibold));
+    margin: 0;
+
+    color: var(--text-title-neutral);
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.game-art__caption {
+    @include body-text(var(--font-size-body-xs));
+
+    color: var(--text-caption);
+    line-height: 1.3;
+}
+
+.game-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.game-tag {
+    padding: 6px 12px;
+
+    color: var(--brand-green-400);
+    background-color: var(--surface-secondary);
+    border-radius: 6px;
+
+    @include body-text(var(--font-size-body-xs), var(--font-weight-semibold));
+    line-height: 1.3;
+}
+
+// Card de compra
+.game-buy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 24px;
+
+    background-color: var(--surface-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 16px;
+}
+
+.game-buy__eyebrow {
+    @include body-text(var(--font-size-body-xs), var(--font-weight-semibold));
+    margin: 0;
+
+    color: var(--text-title-secondary);
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.game-buy__title {
+    @include headline(32px);
+    margin: 0;
+
+    color: var(--text-title-neutral);
+    line-height: 1.45;
+}
+
+.game-buy__text,
+.game-buy__note {
+    margin: 0;
+    line-height: 1.3;
+}
+
+.game-buy__text {
+    @include body-text(var(--font-size-body-sm));
+    color: var(--text-body);
+}
+
+.game-buy__note {
+    @include body-text(var(--font-size-body-xs));
+    color: var(--text-caption);
+}
+
+.game-offer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.game-offer__discount {
+    flex-shrink: 0;
+    padding: 8px 10px;
+
+    color: var(--surface-primary);
+    background-color: var(--action-secondary-default);
+    border-radius: 6px;
+
+    @include body-text(var(--font-size-body-sm), var(--font-weight-extrabold));
+    line-height: 1.3;
+}
+
+.game-offer__prices {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+    margin: 0;
+}
+
+.game-offer__old-price {
+    @include body-text(var(--font-size-body-sm));
+
+    color: var(--text-caption);
+    line-height: 1.3;
+}
+
+.game-offer__price {
+    @include headline(40px);
+
+    color: var(--text-title-neutral);
+    line-height: 1.45;
+}
+
+.game-buy__cart {
+    min-height: 48px;
+    box-shadow: 0 10px 15px var(--opacity-yellow-32);
+
+    .ui-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.game-buy__wishlist {
+    --bs-btn-padding-y: 12px;
+    gap: 10px;
+
+    .ui-icon {
+        width: 20px;
+        height: 20px;
+        color: var(--brand-green-400);
+    }
+}
+
+
+// ==========================================
+// SOBRE O JOGO
+// ==========================================
+
+.game-about {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 32px;
+
+    @media (min-width: 1200px) {
+        grid-template-columns: minmax(0, 1fr) 364px;
+    }
+}
+
+.game-about__story {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.game-about__title {
+    @include headline(40px);
+    margin: 0;
+
+    color: var(--text-title-neutral);
+    line-height: 1.45;
+}
+
+.game-about__text {
+    @include body-text(var(--font-size-body-md));
+    margin: 0;
+
+    color: var(--text-body);
+    line-height: 1.3;
+}
+
+// Ficha (gênero, estilo, universo)
+.game-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin: 0;
+    padding: 24px;
+
+    background-color: var(--surface-secondary);
+    border-radius: 12px;
+
+    font-family: var(--font-body);
+    line-height: 1.3;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    dt {
+        color: var(--text-caption);
+        font-size: var(--font-size-body-xs);
+        font-weight: var(--font-weight-regular);
+    }
+
+    dd {
+        margin: 0;
+
+        color: var(--text-subtitle);
+        font-size: var(--font-size-body-sm);
+        font-weight: var(--font-weight-semibold);
+    }
+}
+
+// Destaques numerados
+.game-features {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.game-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 24px;
+
+    background-color: var(--surface-secondary);
+    border-radius: 12px;
+}
+
+.game-feature__number {
+    @include body-text(var(--font-size-body-xs), var(--font-weight-semibold));
+
+    color: var(--brand-green-400);
+    line-height: 1.3;
+}
+
+.game-feature__title {
+    @include headline(24px);
+    margin: 0;
+
+    color: var(--text-title-neutral);
+    line-height: 1.45;
+}
+
+.game-feature__text {
+    @include body-text(var(--font-size-body-sm));
+    margin: 0;
+
+    color: var(--text-body);
+    line-height: 1.3;
+}
+
+
+// ==========================================
+// REQUISITOS DO SISTEMA
+// ==========================================
+
+.game-requirements {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 24px;
+
+    background-color: var(--surface-secondary);
+    border-radius: 12px;
+
+    font-family: var(--font-body);
+    line-height: 1.3;
+}
+
+.game-requirements__title {
+    @include body-text(var(--font-size-body-md), var(--font-weight-semibold));
+    margin: 0;
+
+    color: var(--text-title-neutral);
+    line-height: 1.3;
+}
+
+.game-requirements__text {
+    margin: 0;
+
+    color: var(--text-body);
+    font-size: var(--font-size-body-md);
+}
+
+.game-requirements__list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    dt {
+        color: var(--text-caption);
+        font-size: var(--font-size-body-sm);
+        font-weight: var(--font-weight-regular);
+    }
+
+    dd {
+        margin: 0;
+
+        color: var(--text-subtitle);
+        font-size: var(--font-size-body-md);
+        font-weight: var(--font-weight-semibold);
+    }
+}
+
+
+// ==========================================
+// AVALIAÇÕES DA COMUNIDADE
+// ==========================================
+
+.game-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    padding: 32px;
+
+    background-color: var(--surface-secondary);
+    border-radius: 16px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+    }
+
+    @media (max-width: 575.98px) {
+        padding: 24px;
+    }
+}
+
+.game-reviews__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.game-reviews__title {
+    @include headline(32px);
+    margin: 0;
+
+    color: var(--text-title-neutral);
+    line-height: 1.45;
+}
+
+.game-reviews__text {
+    @include body-text(var(--font-size-body-md));
+    margin: 0;
+
+    color: var(--text-body);
+    line-height: 1.3;
+}
+
+.game-reviews__action {
+    flex-shrink: 0;
+}

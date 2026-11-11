@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./build/css/main.css">
+
+    <title>Iyá e o círculo da natureza | Iara Games</title>
+</head>
+
+<body>
+
+    <div class="d-flex min-vh-100">
+
+        <!-- SIDEBAR -->
+        <aside class="offcanvas-lg offcanvas-start app-sidebar flex-shrink-0" tabindex="-1" id="sidebarMenu"
+            aria-label="Menu principal">
+
+            <!-- Cabeçalho visível somente no mobile -->
+            <div class="offcanvas-header d-lg-none d-flex justify-content-center align-items-center">
+                <a href="index.html" class="topbar-mobile-brand">
+                    <img src="./public/images/logo.png" alt="Logo da Iara Games nas cores branca e amarelo"
+                        class="logo">
+                </a>
+
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    data-bs-target="#sidebarMenu" aria-label="Fechar menu"></button>
+            </div>
+
+            <!-- Conteúdo da sidebar -->
+            <div class="offcanvas-body d-flex flex-column">
+
+                <a href="index.html" class="sidebar-brand d-none d-lg-flex">
+                    <img src="./public/images/logo.png" alt="Logo da Iara Games nas cores branca e amarelo"
+                        class="logo">
+                </a>
+
+                <nav class="sidebar-nav">
+
+                    <a href="index.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-inicio" aria-hidden="true"></span>
+                        <span>Início</span>
+                    </a>
+
+                    <a href="index.html#sobre" class="sidebar-link">
+                        <span class="sidebar-icon icon-sobre" aria-hidden="true"></span>
+                        <span>Sobre Nós</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-lancamentos" aria-hidden="true"></span>
+                        <span>Lançamentos</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link active" aria-current="true">
+                        <span class="sidebar-icon icon-loja" aria-hidden="true"></span>
+                        <span>Loja</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-promocoes" aria-hidden="true"></span>
+                        <span>Promoções</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-curadores" aria-hidden="true"></span>
+                        <span>Curadores</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-categorias" aria-hidden="true"></span>
+                        <span>Categorias</span>
+                    </a>
+
+                    <div class="sidebar-divider"></div>
+
+                    <div class="sidebar-profile d-flex d-lg-none">
+                        <img src="./public/images/avatar-usuario.png" alt="Foto do usuário">
+                        <div class="d-flex flex-column gap-2">
+                            <span>Olá, Iara Gamer!</span>
+                            <button class="btn btn-outline-primary btn-sm">Ver perfil</button>
+                        </div>
+                    </div>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-meus-jogos" aria-hidden="true"></span>
+                        <span>Meus jogos</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-desejos" aria-hidden="true"></span>
+                        <span>Lista de desejos</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-conquistas" aria-hidden="true"></span>
+                        <span>Conquistas</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-forum" aria-hidden="true"></span>
+                        <span>Fórum</span>
+                    </a>
+
+                    <a href="breve.html" class="sidebar-link">
+                        <span class="sidebar-icon icon-suporte" aria-hidden="true"></span>
+                        <span>Suporte</span>
+                    </a>
+
+                </nav>
+
+                <div class="sidebar-footer d-none d-lg-flex">
+                    <img src="./public/images/footer-iara.webp"
+                        alt="Imagem de uma mulher indígena dentro da água em formato minimalista nas cores verde e amarelo"
+                        class="sidebar-footer-image">
+
+                    <div class="sidebar-social">
+                        <a href="#" class="sidebar-social-link" aria-label="Instagram da Iara Games">
+                            <span class="ui-icon icon-chat" aria-hidden="true"></span>
+                        </a>
+                        <a href="breve.html" class="sidebar-social-link" aria-label="Comunidade">
+                            <span class="ui-icon icon-forum" aria-hidden="true"></span>
+                        </a>
+                        <a href="breve.html" class="sidebar-social-link" aria-label="Novidades">
+                            <span class="ui-icon icon-lancamentos" aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <p class="sidebar-copyright">
+                        © 2026 Iara Games<br>
+                        Todos os direitos reservados
+                    </p>
+                </div>
+            </div>
+        </aside>
+
+
+        <!-- ÁREA PRINCIPAL -->
+        <div class="flex-grow-1 min-w-0 d-flex flex-column">
+
+            <!-- TOPBAR -->
+            <header class="topbar">
+                <div class="container d-flex align-items-center">
+
+                    <div class="topbar-left d-flex align-items-center flex-grow-1">
+
+                        <button class="btn sidebar-toggle d-lg-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-label="Abrir menu">
+                            <span class="ui-icon icon-menu" aria-hidden="true"></span>
+                        </button>
+
+                        <div class="topbar-search d-flex align-items-center">
+                            <span class="ui-icon icon-search" aria-hidden="true"></span>
+                            <input type="search" placeholder="Buscar jogos, estúdios e mais..."
+                                aria-label="Buscar jogos">
+                        </div>
+
+                    </div>
+
+                    <div class="d-none d-lg-flex">
+                        <div class="topbar-actions d-flex align-items-center">
+                            <a href="#" class="topbar-icon" aria-label="Carrinho">
+                                <span class="ui-icon icon-cart" aria-hidden="true"></span>
+                            </a>
+
+                            <a href="#" class="topbar-icon" aria-label="Notificações">
+                                <span class="ui-icon icon-notification" aria-hidden="true"></span>
+                            </a>
+
+                            <a href="login.html" class="topbar-profile" aria-label="Sua conta">
+                                <span class="topbar-profile-avatar">
+                                    <span class="ui-icon icon-profile" aria-hidden="true"></span>
+                                </span>
+                                <span class="ui-icon icon-chevron-down" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- CONTEÚDO -->
+            <main class="flex-grow-1">
+                <div class="container game-details">
+
+                    <!-- APRESENTAÇÃO DO JOGO -->
+                    <section class="game-intro" aria-labelledby="game-title">
+
+                        <nav aria-label="Você está em">
+                            <ol class="breadcrumb game-breadcrumb">
+                                <li class="breadcrumb-item"><a href="breve.html">Loja</a></li>
+                                <li class="breadcrumb-item"><a href="breve.html">Aventura</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Iyá</li>
+                            </ol>
+                        </nav>
+
+                        <div class="game-intro__heading">
+                            <h1 id="game-title" class="game-intro__title">Iyá e o círculo da natureza</h1>
+                            <span class="game-badge">Feito no Brasil</span>
+                        </div>
+
+                        <p class="game-intro__subtitle">
+                            Uma jornada pelas raízes, mistérios e encantos da natureza.
+                        </p>
+
+                    </section>
+
+                    <!-- ARTE E COMPRA -->
+                    <div class="game-showcase">
+
+                        <!-- Arte de divulgação -->
+                        <figure class="game-art">
+                            <img src="public/images/iya-divulgacao.jpg" class="game-art__image"
+                                alt="Trilha escura entre árvores altas de uma floresta, com uma luz quente no fim do caminho">
+
+                            <div class="game-art__overlay" aria-hidden="true"></div>
+
+                            <div class="game-art__signature" aria-hidden="true">
+                                <p class="game-art__name">Iyá</p>
+                                <p class="game-art__tagline">e o círculo da natureza</p>
+                            </div>
+
+                            <figcaption class="game-art__caption">
+                                Arte de divulgação · Um novo universo para explorar
+                            </figcaption>
+
+                            <ul class="game-tags" aria-label="Gêneros">
+                                <li class="game-tag">Aventura</li>
+                                <li class="game-tag">Exploração</li>
+                                <li class="game-tag">Natureza</li>
+                                <li class="game-tag">Indie</li>
+                            </ul>
+                        </figure>
+
+                        <!-- Compra -->
+                        <section class="game-buy" aria-labelledby="buy-title">
+
+                            <p class="game-buy__eyebrow">Sua próxima aventura</p>
+
+                            <h2 id="buy-title" class="game-buy__title">A natureza tem uma história para contar.</h2>
+
+                            <p class="game-buy__text">Descubra o universo de Iyá e faça parte desse círculo.</p>
+
+                            <div class="game-offer">
+                                <span class="game-offer__discount">−20%</span>
+
+                                <p class="game-offer__prices">
+                                    <s class="game-offer__old-price">
+                                        <span class="visually-hidden">Preço original: </span>R$ 49,90
+                                    </s>
+                                    <span class="game-offer__price">
+                                        <span class="visually-hidden">Preço com desconto: </span>R$ 39,90
+                                    </span>
+                                </p>
+                            </div>
+
+                            <button type="button" class="btn btn-iara-secondary w-100 game-buy__cart">
+                                Adicionar ao carrinho
+                                <span class="ui-icon icon-arrow-right" aria-hidden="true"></span>
+                            </button>
+
+                            <button type="button" class="btn btn-iara-ghost w-100 game-buy__wishlist"
+                                data-bs-toggle="button" aria-pressed="false">
+                                <span class="ui-icon icon-desejos" aria-hidden="true"></span>
+                                Lista de desejos
+                            </button>
+
+                            <p class="game-buy__note">Compra digital pela Iara Games</p>
+
+                        </section>
+                    </div>
+
+                    <!-- SOBRE O JOGO -->
+                    <section class="game-section" aria-labelledby="about-title">
+
+                        <div class="game-section-heading">
+                            <img src="public/images/Flourish-l.svg" alt="" aria-hidden="true">
+                            <h2 id="about-title" class="game-section-heading__title">Sobre o jogo</h2>
+                        </div>
+
+                        <div class="game-about">
+                            <div class="game-about__story">
+                                <h3 class="game-about__title">Ouça o chamado da floresta.</h3>
+
+                                <p class="game-about__text">
+                                    Entre no universo de Iyá, onde cada caminho convida a olhar mais de perto. Uma
+                                    aventura de exploração que coloca a natureza no centro da experiência.
+                                </p>
+
+                                <p class="game-about__text">
+                                    Siga os sinais da mata, descubra seus mistérios e encontre novas conexões em uma
+                                    jornada sobre equilíbrio e pertencimento.
+                                </p>
+                            </div>
+
+                            <dl class="game-facts">
+                                <div>
+                                    <dt>Gênero</dt>
+                                    <dd>Aventura e exploração</dd>
+                                </div>
+                                <div>
+                                    <dt>Estilo</dt>
+                                    <dd>Independente</dd>
+                                </div>
+                                <div>
+                                    <dt>Universo</dt>
+                                    <dd>Natureza e fantasia</dd>
+                                </div>
+                            </dl>
+                        </div>
+
+                        <ol class="game-features">
+                            <li class="game-feature">
+                                <span class="game-feature__number" aria-hidden="true">01</span>
+                                <h3 class="game-feature__title">Um mundo para explorar</h3>
+                                <p class="game-feature__text">
+                                    Percorra uma floresta envolta em mistério e deixe a curiosidade guiar seus passos.
+                                </p>
+                            </li>
+
+                            <li class="game-feature">
+                                <span class="game-feature__number" aria-hidden="true">02</span>
+                                <h3 class="game-feature__title">Conexão com a natureza</h3>
+                                <p class="game-feature__text">
+                                    Uma jornada que convida a descobrir o valor de cada parte de um mesmo círculo.
+                                </p>
+                            </li>
+
+                            <li class="game-feature">
+                                <span class="game-feature__number" aria-hidden="true">03</span>
+                                <h3 class="game-feature__title">Histórias com raízes</h3>
+                                <p class="game-feature__text">
+                                    Fantasia e identidade brasileira em uma nova aventura do catálogo Iara.
+                                </p>
+                            </li>
+                        </ol>
+
+                    </section>
+
+                    <!-- REQUISITOS DO SISTEMA -->
+                    <section class="game-section" aria-labelledby="requirements-title">
+
+                        <div class="game-section-heading">
+                            <img src="public/images/Flourish-l.svg" alt="" aria-hidden="true">
+                            <h2 id="requirements-title" class="game-section-heading__title">Requisitos do sistema</h2>
+                        </div>
+
+                        <div class="game-requirements">
+                            <h3 class="game-requirements__title">Confira a compatibilidade antes de jogar</h3>
+
+                            <p class="game-requirements__text">
+                                As configurações mínimas e recomendadas de Iyá ainda serão informadas pelo estúdio.
+                            </p>
+
+                            <dl class="game-requirements__list">
+                                <div>
+                                    <dt>Sistema operacional</dt>
+                                    <dd>A confirmar</dd>
+                                </div>
+                                <div>
+                                    <dt>Processador e memória</dt>
+                                    <dd>A confirmar</dd>
+                                </div>
+                                <div>
+                                    <dt>Gráficos e armazenamento</dt>
+                                    <dd>A confirmar</dd>
+                                </div>
+                            </dl>
+                        </div>
+
+                    </section>
+
+                    <!-- AVALIAÇÕES DA COMUNIDADE -->
+                    <section class="game-section" aria-labelledby="reviews-title">
+
+                        <div class="game-section-heading">
+                            <img src="public/images/Flourish-l.svg" alt="" aria-hidden="true">
+                            <h2 id="reviews-title" class="game-section-heading__title">Avaliações da comunidade</h2>
+                        </div>
+
+                        <div class="game-reviews">
+                            <div class="game-reviews__content">
+                                <h3 class="game-reviews__title">Toda aventura merece ser compartilhada.</h3>
+
+                                <p class="game-reviews__text">
+                                    Ainda não há avaliações por aqui. Depois de jogar, conte à comunidade o que você
+                                    achou de Iyá.
+                                </p>
+                            </div>
+
+                            <a href="login.html" class="btn btn-iara-ghost game-reviews__action">
+                                Entrar para avaliar
+                            </a>
+                        </div>
+
+                    </section>
+
+                    <!-- VOCÊ TAMBÉM PODE GOSTAR -->
+                    <section class="game-section" aria-labelledby="related-title">
+
+                        <div class="game-section-heading">
+                            <img src="public/images/Flourish-l.svg" alt="" aria-hidden="true">
+                            <h2 id="related-title" class="game-section-heading__title">Você também pode gostar</h2>
+
+                            <a href="breve.html" class="games-section-link">
+                                Explorar a loja
+                                <span class="ui-icon icon-arrow-right" aria-hidden="true"></span>
+                            </a>
+                        </div>
+
+                        <div class="games-grid">
+
+                            <!-- Card 1 -->
+                            <a href="breve.html" class="game-card-link">
+                                <article class="game-card">
+
+                                    <div class="game-card__image">
+                                        <img src="public/images/correnteza.webp"
+                                            alt="Cachoeira desaguando em um rio revolto">
+
+                                        <div class="game-card__image-overlay"></div>
+
+                                        <span class="game-card__category">Aventura</span>
+
+                                        <h3 class="game-card__title">Correnteza</h3>
+                                    </div>
+
+                                    <div class="game-card__content">
+
+                                        <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star-empty"></span>
+                                        </div>
+
+                                        <div class="game-card__pricing">
+                                            <span class="game-card__discount">-40%</span>
+                                            <span class="game-card__price">R$ 29,90</span>
+                                            <s class="game-card__old-price">
+                                                <span class="visually-hidden">Preço original: </span>R$ 49,90
+                                            </s>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+                            </a>
+
+                            <!-- Card 2 -->
+                            <a href="breve.html" class="game-card-link">
+                                <article class="game-card">
+
+                                    <div class="game-card__image">
+                                        <img src="public/images/sertao-profundo.webp"
+                                            alt="Paisagem árida do sertão sob luz dourada">
+
+                                        <div class="game-card__image-overlay"></div>
+
+                                        <span class="game-card__category">RPG</span>
+
+                                        <h3 class="game-card__title">Sertão Profundo</h3>
+                                    </div>
+
+                                    <div class="game-card__content">
+
+                                        <div class="game-card__rating" role="img" aria-label="5 de 5 estrelas">
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                        </div>
+
+                                        <div class="game-card__pricing">
+                                            <span class="game-card__discount">-30%</span>
+                                            <span class="game-card__price">R$ 55,90</span>
+                                            <s class="game-card__old-price">
+                                                <span class="visually-hidden">Preço original: </span>R$ 79,90
+                                            </s>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+                            </a>
+
+                            <!-- Card 3 -->
+                            <a href="breve.html" class="game-card-link">
+                                <article class="game-card">
+
+                                    <div class="game-card__image">
+                                        <img src="public/images/noite-neon.webp"
+                                            alt="Rua molhada à noite com luzes de néon">
+
+                                        <div class="game-card__image-overlay"></div>
+
+                                        <span class="game-card__category">Ação</span>
+
+                                        <h3 class="game-card__title">Noite de Néon</h3>
+                                    </div>
+
+                                    <div class="game-card__content">
+
+                                        <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star-empty"></span>
+                                        </div>
+
+                                        <div class="game-card__pricing">
+                                            <span class="game-card__price game-card__price--free">Grátis</span>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+                            </a>
+
+                            <!-- Card 4 -->
+                            <a href="breve.html" class="game-card-link">
+                                <article class="game-card">
+
+                                    <div class="game-card__image">
+                                        <img src="public/images/arquipelago.webp"
+                                            alt="Vista aérea de um arquipélago de ilhas">
+
+                                        <div class="game-card__image-overlay"></div>
+
+                                        <span class="game-card__category">Estratégia</span>
+
+                                        <h3 class="game-card__title">Arquipélago</h3>
+                                    </div>
+
+                                    <div class="game-card__content">
+
+                                        <div class="game-card__rating" role="img" aria-label="4 de 5 estrelas">
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star"></span>
+                                            <span class="ui-icon icon-star-empty"></span>
+                                        </div>
+
+                                        <div class="game-card__pricing">
+                                            <span class="game-card__discount">-25%</span>
+                                            <span class="game-card__price">R$ 26,17</span>
+                                            <s class="game-card__old-price">
+                                                <span class="visually-hidden">Preço original: </span>R$ 34,90
+                                            </s>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+                            </a>
+
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+
+            <!-- PADRÃO + RODAPÉ -->
+            <div class="footer-pattern bg-pattern-indigena" aria-hidden="true"></div>
+
+            <footer class="footer">
+                <div class="footer-main">
+
+                    <!-- IDENTIDADE -->
+                    <div class="footer-brand">
+                        <img src="public/images/logo-footer.png" alt="Logo da Iara Games nas cores verde e amarelo"
+                            class="footer-logo">
+
+                        <p class="footer-description">
+                            Plataforma de descoberta de jogos digitais com identidade brasileira.
+                        </p>
+                    </div>
+
+                    <!-- PLATAFORMA -->
+                    <div>
+                        <h2 class="footer-heading">Plataforma</h2>
+
+                        <ul class="footer-links">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="breve.html">Loja</a></li>
+                            <li><a href="breve.html">Lançamentos</a></li>
+                            <li><a href="breve.html">Promoções</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COMUNIDADE -->
+                    <div>
+                        <h2 class="footer-heading">Comunidade</h2>
+
+                        <ul class="footer-links">
+                            <li><a href="breve.html">Fórum</a></li>
+                            <li><a href="breve.html">Curadores</a></li>
+                            <li><a href="breve.html">Avaliações</a></li>
+                            <li><a href="breve.html">Newsletter</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- EMPRESA -->
+                    <div>
+                        <h2 class="footer-heading">Empresa</h2>
+
+                        <ul class="footer-links">
+                            <li><a href="index.html#sobre">Sobre nós</a></li>
+                            <li><a href="breve.html">Contato</a></li>
+                            <li><a href="breve.html">Privacidade</a></li>
+                            <li><a href="breve.html">Termos</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- CRÉDITOS -->
+                <div class="footer-bottom">
+                    <p>© 2026 Iara Games. Projeto acadêmico.</p>
+                    <p>Desenvolvido pela equipe Ananda · Thais · Vidal · Pâmela · Vinicius</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+
+</body>
+
+</html>

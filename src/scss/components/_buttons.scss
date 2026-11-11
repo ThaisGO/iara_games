@@ -12,6 +12,9 @@
     --bs-btn-padding-x: 1.25rem;
     --bs-btn-border-radius: 0.75rem;
 
+    // Anel de foco visível no teclado (as variantes iara não definem esta cor)
+    --bs-btn-focus-shadow-rgb: 240, 185, 51;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -83,6 +86,35 @@
     --bs-btn-active-color: var(--neutral-gray-950);
     --bs-btn-active-bg: var(--action-primary-pressed);
     --bs-btn-active-border-color: var(--action-primary-pressed);
+
+    --bs-btn-disabled-color: var(--neutral-gray-500);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--surface-disabled);
+}
+
+
+// ==========================================
+// BOTÃO GHOST (borda verde, texto amarelo)
+// ==========================================
+
+.btn-iara-ghost {
+    --bs-btn-padding-y: 14px;
+    --bs-btn-padding-x: 24px;
+    --bs-btn-font-weight: var(--font-weight-semibold);
+    --bs-btn-line-height: 1.3;
+    --bs-btn-border-radius: 8px;
+
+    --bs-btn-color: var(--text-title-secondary);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: var(--action-primary-default);
+
+    --bs-btn-hover-color: var(--text-title-secondary);
+    --bs-btn-hover-bg: var(--opacity-green-8);
+    --bs-btn-hover-border-color: var(--action-primary-hover);
+
+    --bs-btn-active-color: var(--text-title-secondary);
+    --bs-btn-active-bg: var(--opacity-green-16);
+    --bs-btn-active-border-color: var(--action-primary-hover);
 
     --bs-btn-disabled-color: var(--neutral-gray-500);
     --bs-btn-disabled-bg: transparent;

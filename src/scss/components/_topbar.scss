@@ -4,10 +4,14 @@
 // ==========================================
 
 .topbar {
-    min-height: 72px;
     width: 100%;
-    gap: 24px;
     background-color: var(--surface-primary);
+    border-bottom: 1px solid var(--border-default);
+
+    > .container {
+        min-height: 80px;
+        gap: 16px;
+    }
 }
 
 
@@ -35,21 +39,26 @@
 // ==========================================
 
 .topbar-search {
-    width: min(100%, 460px);
+    width: min(100%, 520px);
     min-width: 0;
 
-    gap: 10px;
-    padding: 10px 16px;
-
-    color: var(--text-caption);
+    gap: 12px;
+    padding: 9px 16px;
 
     background-color: var(--surface-secondary);
     border: 1px solid var(--border-default);
     border-radius: 50px;
 
+    transition: border-color 0.2s ease;
+
+    &:focus-within {
+        border-color: var(--action-primary-default);
+    }
+
     input {
         width: 100%;
         min-width: 0;
+        padding: 0;
 
         color: var(--text-title-neutral);
         background: transparent;
@@ -57,7 +66,8 @@
         outline: 0;
 
         font-family: var(--font-body);
-        font-size: var(--font-size-body-xs);
+        font-size: var(--font-size-body-sm);
+        line-height: 1.3;
 
         &::placeholder {
             color: var(--text-caption);
@@ -81,21 +91,23 @@
 
     font-size: var(--font-size-body-sm);
     font-weight: var(--font-weight-regular);
-    
+
     &:hover {
         color: var(--action-secondary-default);
     }
 }
 
+// Os SVGs da topbar já trazem a opacidade do design (64% / 72%),
+// por isso a cor base dos ícones é o cinza claro sólido.
 .topbar-icon {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
 
-    color: var(--text-body);
+    color: var(--neutral-gray-50);
     text-decoration: none;
 
     border: 1px solid var(--border-default);
@@ -109,28 +121,39 @@
 
 
 // ==========================================
-// PERFIL
+// CONTA
 // ==========================================
 
 .topbar-profile {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 
-    color: var(--text-body);
+    padding: 4px 8px 4px 4px;
+
+    color: var(--neutral-gray-50);
     text-decoration: none;
 
-    img {
-        width: 36px;
-        height: 36px;
-
-        object-fit: cover;
-        border-radius: 50%;
-    }
+    border: 1px solid var(--border-default);
+    border-radius: 50px;
 
     &:hover {
         color: var(--action-secondary-default);
+        border-color: var(--action-secondary-default);
     }
+}
+
+.topbar-profile-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    color: var(--text-title-secondary);
+    background-color: var(--opacity-green-16);
+    border-radius: 50%;
 }
 
 
@@ -139,18 +162,19 @@
 // ==========================================
 
 .topbar-search .ui-icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
+    color: var(--neutral-gray-50);
 }
 
 .topbar-icon .ui-icon {
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
 }
 
 .topbar-profile .ui-icon {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
 }
 
 
