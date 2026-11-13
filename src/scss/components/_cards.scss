@@ -1,5 +1,34 @@
 
 // ==========================================
+// MICRO-INTERAÇÃO DOS CARDS
+// ==========================================
+
+// No hover ou no foco pelo teclado, o card sobe 4px e a borda fica verde.
+// card-lift vai no card; card-lift-active, no estado ativo.
+@mixin card-lift {
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+// O !important é para vencer a borda com !important de .banner-bg-green.
+// Com "reduzir movimento" ativado no sistema, só a borda muda.
+@mixin card-lift-active {
+    transform: translateY(-4px);
+    border-color: var(--action-primary-default) !important;
+
+    @media (prefers-reduced-motion: reduce) {
+        transform: none;
+    }
+}
+
+// Contorno de foco desenhado no card, para subir junto com ele
+@mixin card-focus-ring {
+    outline: 2px solid var(--action-secondary-default);
+    outline-offset: 2px;
+}
+
+// ==========================================
 // CARD DE JOGO
 // ==========================================
 
@@ -15,13 +44,10 @@
     border: 1px solid var(--border-default);
     border-radius: 16px;
 
-    transition:
-        transform 0.2s ease,
-        border-color 0.2s ease;
+    @include card-lift;
 
     &:hover {
-        transform: translateY(-4px);
-        border-color: var(--action-primary-default);
+        @include card-lift-active;
     }
 }
 
@@ -38,6 +64,48 @@
     &:hover {
         color: inherit;
     }
+
+    // O foco fica no link, que envolve o card
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:focus-visible .game-card {
+        @include card-lift-active;
+        @include card-focus-ring;
+    }
+}
+
+// ==========================================
+// CARD DE CATEGORIA
+// ==========================================
+
+.category-card-link {
+    display: block;
+    height: 100%;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+
+    &:hover .category-card {
+        @include card-lift-active;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:focus-visible .category-card {
+        @include card-lift-active;
+        @include card-focus-ring;
+    }
+}
+
+.category-card {
+    height: 100%;
+    @include card-lift;
 }
 
 // ==========================================
